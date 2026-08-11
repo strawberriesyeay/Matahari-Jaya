@@ -95,3 +95,74 @@ document.querySelectorAll(".product-gallery").forEach(gallery => {
     });
 
 });
+
+// ================= GALLERY LIGHTBOX =================
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const galleryItems =
+        document.querySelectorAll(".gallery-item");
+
+    const lightbox =
+        document.querySelector(".gallery-lightbox");
+
+    const lightboxImage =
+        document.querySelector(".gallery-lightbox img");
+
+    const closeButton =
+        document.querySelector(".lightbox-close");
+
+
+    if (!lightbox || !lightboxImage) return;
+
+
+    galleryItems.forEach(item => {
+
+        const image = item.querySelector("img");
+
+        const viewButton =
+            item.querySelector(".gallery-view");
+
+
+        item.addEventListener("click", () => {
+
+            lightboxImage.src = image.src;
+
+            lightboxImage.alt = image.alt;
+
+            lightbox.classList.add("active");
+
+        });
+
+    });
+
+
+    closeButton.addEventListener("click", () => {
+
+        lightbox.classList.remove("active");
+
+    });
+
+
+    lightbox.addEventListener("click", (e) => {
+
+        if (e.target === lightbox) {
+
+            lightbox.classList.remove("active");
+
+        }
+
+    });
+
+
+    document.addEventListener("keydown", (e) => {
+
+        if (e.key === "Escape") {
+
+            lightbox.classList.remove("active");
+
+        }
+
+    });
+
+});
