@@ -1648,3 +1648,376 @@ body.page-exit {
 .product-card .product-detail {
     flex-shrink: 0;
 }
+
+/* =====================================================
+   RESPONSIVE - TABLET & MOBILE
+   ===================================================== */
+
+@media (max-width: 992px) {
+
+    /* ===== NAVBAR ===== */
+
+    header {
+        height: 75px;
+        padding: 0 5%;
+    }
+
+    .logo {
+        gap: 8px;
+    }
+
+    .logo img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .logo-text h2 {
+        font-size: 19px;
+    }
+
+    .logo-text span {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    nav {
+        gap: 20px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .btn-contact {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+
+
+    /* ===== HERO ===== */
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 130px 6% 70px;
+        gap: 30px;
+    }
+
+    .hero-text {
+        max-width: 700px;
+    }
+
+    .small-title {
+        font-size: 12px;
+        letter-spacing: 3px;
+    }
+
+    .hero-title {
+        align-items: center;
+    }
+
+    .hero-title .matahari {
+        font-size: 58px;
+    }
+
+    .hero-title .jaya {
+        font-size: 54px;
+    }
+
+    .sun-divider {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-tagline {
+        font-size: 15px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+    .hero-button {
+        justify-content: center;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-logo {
+        width: 330px;
+        height: 330px;
+    }
+
+
+    /* ===== ABOUT ===== */
+
+    .about {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .about-image {
+        order: 1;
+    }
+
+    .about-text {
+        order: 2;
+        max-width: 700px;
+        margin: auto;
+    }
+
+    .about-image-frame {
+        max-width: 550px;
+    }
+
+    .about-text h2 {
+        font-size: 44px;
+    }
+
+
+    /* ===== PRODUCTS ===== */
+
+    .product-container,
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* ===== WHY ===== */
+
+    .why-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 600px) {
+
+    /* ===== GENERAL ===== */
+
+    section {
+        padding: 75px 5%;
+    }
+
+
+    /* ===== NAVBAR ===== */
+
+    header {
+        height: 68px;
+        padding: 0 5%;
+    }
+
+    .logo img {
+        width: 52px;
+        height: 52px;
+    }
+
+    .logo-text h2 {
+        font-size: 16px;
+    }
+
+    .logo-text span {
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .btn-contact {
+        padding: 9px 16px;
+        font-size: 11px;
+    }
+
+
+    /* ===== HERO ===== */
+
+    .hero {
+        min-height: auto;
+        padding: 115px 5% 65px;
+        gap: 35px;
+    }
+
+    .small-title {
+        font-size: 10px;
+        letter-spacing: 2.5px;
+        margin-bottom: 18px;
+    }
+
+    .hero-title .matahari {
+        font-size: 43px;
+    }
+
+    .hero-title .jaya {
+        font-size: 42px;
+    }
+
+    .sun-divider {
+        width: 100%;
+        gap: 10px;
+        margin-bottom: 22px;
+    }
+
+    .sun-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .sun-icon::before,
+    .sun-icon::after {
+        width: 24px;
+        height: 24px;
+    }
+
+    .hero-tagline {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .hero-description {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .hero-button {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin-top: 25px;
+    }
+
+    .btn-gold,
+    .btn-outline {
+        width: 100%;
+        max-width: 260px;
+        text-align: center;
+        padding: 13px 25px;
+    }
+
+    .hero-logo {
+        width: 240px;
+        height: 240px;
+    }
+
+
+    /* ===== SECTION TITLE ===== */
+
+    .section-title {
+        margin-bottom: 40px;
+    }
+
+    .section-title h2,
+    .products .section-title h2,
+    .why .section-title h2 {
+        font-size: 36px;
+    }
+
+
+    /* ===== ABOUT ===== */
+
+    .about {
+        gap: 35px;
+    }
+
+    .about-image-frame {
+        padding: 7px;
+    }
+
+    .about-image-frame img {
+        height: 330px;
+    }
+
+    .about-text h2 {
+        font-size: 38px;
+    }
+
+    .about-text > p {
+        font-size: 13px;
+    }
+
+    .about-features {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+
+    /* ===== PRODUCTS ===== */
+
+    .product-container,
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .product-image {
+        height: 280px;
+    }
+
+    .product-card .product-image {
+        height: 280px;
+    }
+
+    .product-card .product-info {
+        padding: 25px;
+    }
+
+    .product-info h3,
+    .product-info h2 {
+        font-size: 27px;
+    }
+
+
+    /* ===== WHY ===== */
+
+    .why-container {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .why-card {
+        padding: 32px 22px;
+    }
+
+
+    /* ===== PRODUCT PAGE ===== */
+
+    .products-page {
+        padding: 120px 5% 70px;
+    }
+
+    .products-heading {
+        margin-bottom: 45px;
+    }
+
+    .products-heading h1 {
+        font-size: 45px;
+    }
+
+    .products-heading p {
+        font-size: 13px;
+    }
+
+
+    /* ===== GALLERY ===== */
+
+    .product-gallery {
+        height: 250px;
+    }
+
+
+    /* ===== FOOTER ===== */
+
+    footer {
+        padding: 45px 5%;
+        text-align: center;
+    }
+
+}
