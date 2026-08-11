@@ -1,0 +1,1650 @@
+/* ===== GOOGLE STYLE ===== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    text-decoration:none;
+    list-style:none;
+}
+
+body{
+    background:linear-gradient(180deg,#0b0b0b,#141414,#0b0b0b);
+    color:#fff;
+    overflow-x:hidden;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* ===== NAVBAR ===== */
+
+header{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:90px;
+    padding:0 8%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+    scroll-margin-top: 100px;
+
+    background:rgba(10,10,10,.75);
+    backdrop-filter:blur(12px);
+
+    border-bottom:1px solid rgba(212,175,55,.15);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    height:70px;
+}
+
+.logo img{
+    width:100px;
+    height:100px;
+    object-fit:contain;
+}
+.logo-text h2{
+    color:#D4AF37;
+    font-size:24px;
+    font-family:'Cinzel', serif;
+    margin:0;
+}
+
+.logo-text span{
+    color:#BFBFBF;
+    font-size:13px;
+    letter-spacing:2px;
+}
+
+nav{
+    display:flex;
+    gap:40px;
+}
+
+nav a{
+    color:#fff;
+    font-weight:500;
+    position:relative;
+    transition:.4s;
+}
+
+nav a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-8px;
+    width:0;
+    height:2px;
+    background:#D4AF37;
+    transition:.4s;
+}
+
+nav a:hover{
+    color:#D4AF37;
+}
+
+nav a:hover::after{
+    width:100%;
+}
+
+.btn-contact{
+    background:#D4AF37;
+    color:#111;
+    padding:13px 30px;
+    border-radius:50px;
+    font-weight:600;
+    transition:.4s;
+    box-shadow:0 0 20px rgba(212,175,55,.3);
+}
+
+.btn-contact:hover{
+    transform:translateY(-3px);
+    background:#F2D46B;
+    box-shadow:0 0 35px rgba(212,175,55,.6);
+}
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 150px 8% 80px;
+
+    gap: 80px;
+
+    position: relative;
+}
+
+
+/* =====================================================
+   HERO TEXT
+===================================================== */
+
+.hero-text {
+    flex: 1;
+    max-width: 650px;
+}
+
+.small-title {
+    color: #D4AF37;
+
+    letter-spacing: 4px;
+    font-size: 14px;
+    font-weight: 500;
+
+    margin-bottom: 25px;
+}
+
+
+/* =====================================================
+   HERO TITLE
+===================================================== */
+
+.hero-title {
+    margin: 0 0 25px;
+
+    line-height: .95;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 2px;
+}
+
+.hero-title .matahari {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 68px;
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    color: #F5F5F5;
+}
+
+.hero-title .jaya {
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 64px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    color: #D4AF37;
+}
+
+
+/* =====================================================
+   GOLD DIVIDER
+===================================================== */
+
+.sun-divider {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    width: 560px;
+    max-width: 100%;
+
+    margin: 5px 0 28px;
+}
+
+
+/* GARIS KIRI */
+
+.sun-divider > span:first-child {
+    height: 1px;
+
+    flex: 1;
+
+    background: linear-gradient(
+        to right,
+        transparent,
+        #D4AF37
+    );
+}
+
+
+/* GARIS KANAN */
+
+.sun-divider > span:last-child {
+    height: 1px;
+
+    flex: 1;
+
+    background: linear-gradient(
+        to left,
+        transparent,
+        #D4AF37
+    );
+}
+
+
+/* =====================================================
+   SUN ICON
+===================================================== */
+
+.sun-icon {
+    width: 40px;
+    height: 40px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+.sun-icon .sun-core {
+    width: 12px;
+    height: 12px;
+
+    background: #D4AF37;
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 8px rgba(212,175,55,.8),
+        0 0 18px rgba(212,175,55,.35);
+}
+
+.sun-icon::before {
+    content: "";
+
+    position: absolute;
+
+    width: 32px;
+    height: 32px;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(#D4AF37,#D4AF37)
+        center top / 2px 7px no-repeat,
+
+        linear-gradient(#D4AF37,#D4AF37)
+        center bottom / 2px 7px no-repeat,
+
+        linear-gradient(#D4AF37,#D4AF37)
+        left center / 7px 2px no-repeat,
+
+        linear-gradient(#D4AF37,#D4AF37)
+        right center / 7px 2px no-repeat;
+
+    opacity: .8;
+}
+
+.sun-icon::after {
+    content: "";
+
+    position: absolute;
+
+    width: 32px;
+    height: 32px;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            45deg,
+            transparent 47%,
+            #D4AF37 48%,
+            #D4AF37 52%,
+            transparent 53%
+        ),
+
+        linear-gradient(
+            -45deg,
+            transparent 47%,
+            #D4AF37 48%,
+            #D4AF37 52%,
+            transparent 53%
+        );
+
+    opacity: .7;
+}
+
+
+/* =====================================================
+   HERO TEXT DESCRIPTION
+===================================================== */
+
+.hero-tagline {
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 17px;
+    font-weight: 500;
+
+    line-height: 1.8;
+
+    letter-spacing: .5px;
+
+    color: #E5E5E5;
+
+    max-width: 600px;
+
+    margin-bottom: 8px;
+}
+
+.hero-description {
+    font-family: 'Poppins', sans-serif;
+
+    color: #BFBFBF;
+
+    font-size: 16px;
+    font-weight: 300;
+
+    line-height: 1.9;
+
+    max-width: 580px;
+
+    margin-top: 0;
+}
+
+
+/* =====================================================
+   HERO BUTTON
+===================================================== */
+
+.hero-button {
+    margin-top: 35px;
+
+    display: flex;
+
+    gap: 20px;
+}
+
+
+/* =====================================================
+   GOLD BUTTON
+===================================================== */
+
+.btn-gold {
+    display: inline-block;
+
+    background: #D4AF37;
+
+    color: #111;
+
+    padding: 16px 36px;
+
+    border-radius: 50px;
+
+    font-weight: 600;
+
+    transition: .4s;
+
+    box-shadow:
+        0 0 30px rgba(212,175,55,.25);
+}
+
+.btn-gold:hover {
+    transform: translateY(-4px);
+
+    background: #F2D46B;
+
+    box-shadow:
+        0 0 40px rgba(212,175,55,.5);
+}
+
+
+/* =====================================================
+   OUTLINE BUTTON
+===================================================== */
+
+.btn-outline {
+    display: inline-block;
+
+    border: 2px solid #D4AF37;
+
+    color: #D4AF37;
+
+    padding: 15px 30px;
+
+    border-radius: 40px;
+
+    transition: .4s;
+}
+
+.btn-outline:hover {
+    transform: translateY(-4px);
+
+    background: #D4AF37;
+
+    color: #111;
+}
+
+
+/* =====================================================
+   HERO LOGO
+===================================================== */
+
+.hero-image {
+    flex: 1;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    /* PENTING:
+       tidak ada glow besar */
+    background: none;
+}
+
+
+/* CONTAINER LOGO */
+
+.hero-logo {
+    width: 420px;
+    height: 420px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+
+/* LOGO */
+
+.hero-logo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    /* clean */
+    filter: none;
+
+    transition: .4s ease;
+}
+
+
+/* HOVER LOGO */
+
+.hero-logo img:hover {
+    transform: scale(1.04);
+}
+
+
+/* =====================================================
+   HILANGKAN GLOW LAMA
+===================================================== */
+
+.hero-image::before {
+    display: none;
+}
+
+.hero-image::after {
+    display: none;
+}
+
+.btn-gold{
+    display:inline-block;
+    background:#D4AF37;
+    color:#111;
+    padding:16px 36px;
+    border-radius:50px;
+    font-weight:600;
+    transition:.4s;
+    box-shadow:0 0 30px rgba(212,175,55,.25);
+}
+
+.btn-gold:hover{
+    transform:translateY(-4px);
+    background:#F2D46B;
+    box-shadow:0 0 40px rgba(212,175,55,.5);
+}
+
+.btn-outline{
+    display:inline-block;
+    border:2px solid #D4AF37;
+    color:#D4AF37;
+    padding:16px 36px;
+    border-radius:50px;
+    transition:.4s;
+}
+
+.btn-outline:hover{
+    background:#D4AF37;
+    color:#111;
+}
+
+.btn-outline{
+    border:2px solid #D4AF37;
+    color:#D4AF37;
+    padding:15px 30px;
+    border-radius:40px;
+}
+
+.hero{
+
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:170px 8% 80px;
+    gap:70px;
+    position:relative;
+
+}
+
+.hero::before{
+
+    content:"";
+    position:absolute;
+    width:450px;
+    height:450px;
+    background:#D4AF37;
+    filter:blur(180px);
+    opacity:.08;
+    right:-120px;
+    top:80px;
+
+}
+
+/* ===== SECTION ===== */
+
+section{
+    padding:100px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title span{
+    color:#D4AF37;
+    letter-spacing:2px;
+}
+
+.section-title h2{
+    font-size:40px;
+    margin-top:15px;
+}
+
+/* ===== ABOUT COMPANY ===== */
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 80px;
+
+    background: #0d0d0d;
+}
+
+
+/* IMAGE */
+
+.about-image {
+    display: flex;
+    justify-content: center;
+}
+
+.about-image-frame {
+    position: relative;
+
+    width: 100%;
+    max-width: 500px;
+
+    border-radius: 24px;
+    padding: 10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(212,175,55,.3),
+            transparent 45%
+        );
+
+    border: 1px solid rgba(212,175,55,.18);
+}
+
+.about-image-frame img {
+    display: block;
+
+    width: 100%;
+    height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+}
+
+
+/* TEXT */
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-label {
+    color: #D4AF37;
+
+    font-size: 12px;
+    letter-spacing: 4px;
+    font-weight: 500;
+}
+
+.about-text h2 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 52px;
+    line-height: 1.1;
+
+    margin: 15px 0 25px;
+
+    color: #F5F5F5;
+}
+
+.about-text h2 span {
+    color: #D4AF37;
+}
+
+.about-text > p {
+    color: #aaa;
+
+    font-size: 15px;
+    line-height: 1.9;
+
+    margin-bottom: 15px;
+}
+
+
+/* FEATURES */
+
+.about-features {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 22px;
+
+    margin-top: 30px;
+}
+
+.about-feature {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 14px;
+}
+
+.about-feature > i {
+    color: #D4AF37;
+
+    font-size: 19px;
+
+    margin-top: 3px;
+}
+
+.about-feature h4 {
+    color: #fff;
+
+    font-size: 14px;
+
+    margin-bottom: 4px;
+}
+
+.about-feature p {
+    color: #777;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+}
+
+
+/* LINK */
+
+.about-link {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 30px;
+
+    color: #D4AF37;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+.about-link:hover {
+    gap: 15px;
+
+    color: #F2D46B;
+}
+
+/* ===== PRODUCTS ===== */
+
+.products{
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(212,175,55,.06),
+            transparent 45%
+        );
+}
+
+
+/* SECTION TITLE */
+
+.products .section-title{
+    max-width:750px;
+    margin:0 auto 60px;
+    text-align:center;
+}
+
+.products .section-title span{
+    color:#D4AF37;
+    font-size:13px;
+    letter-spacing:4px;
+    font-weight:500;
+}
+
+.products .section-title h2{
+    font-family:'Cormorant Garamond', serif;
+    font-size:48px;
+    font-weight:600;
+    margin:12px 0 15px;
+}
+
+.products .section-title p{
+    color:#aaa;
+    font-size:15px;
+    line-height:1.8;
+}
+
+
+
+/* PRODUCT GRID */
+
+.product-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+
+
+/* PRODUCT CARD */
+
+.product-card{
+    background:
+        linear-gradient(
+            145deg,
+            #191919,
+            #101010
+        );
+
+    border:1px solid rgba(212,175,55,.12);
+    border-radius:20px;
+    overflow:hidden;
+    transition:.4s ease;
+}
+
+.product-card:hover{
+    transform:translateY(-10px);
+    border-color:rgba(212,175,55,.5);
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.5),
+        0 0 30px rgba(212,175,55,.08);
+}
+
+
+
+/* PRODUCT IMAGE */
+
+.product-image{
+    height:320px;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:25px;
+    background:
+        radial-gradient(
+            circle,
+            rgba(212,175,55,.12),
+            transparent 65%
+        );
+}
+
+.product-image img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    transition:.5s ease;
+}
+
+.product-card:hover .product-image img{
+    transform:scale(1.05);
+}
+
+
+
+/* BADGE */
+
+.product-badge{
+    position:absolute;
+    top:18px;
+    left:18px;
+    background:#D4AF37;
+    color:#111;
+    padding:7px 12px;
+    border-radius:30px;
+    font-size:10px;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+
+
+/* PRODUCT INFO */
+
+.product-info{
+    padding:25px 28px 28px;
+}
+
+.product-category{
+    color:#D4AF37;
+    font-size:11px;
+    letter-spacing:2px;
+}
+
+.product-info h3{
+    font-family:'Cormorant Garamond', serif;
+    font-size:28px;
+    margin:8px 0 10px;
+    color:#fff;
+}
+
+.product-info p{
+    color:#aaa;
+    font-size:14px;
+    line-height:1.7;
+    min-height:72px;
+}
+
+
+
+/* PRODUCT BOTTOM */
+
+.product-bottom{
+    margin-top:22px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:15px;
+}
+
+
+
+/* SHOPEE BUTTON */
+
+.btn-shopee{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    background:#D4AF37;
+    color:#111;
+    padding:11px 17px;
+    border-radius:30px;
+    font-size:12px;
+    font-weight:600;
+    transition:.3s ease;
+}
+
+.btn-shopee:hover{
+    background:#F2D46B;
+    transform:translateY(-2px);
+    box-shadow:
+        0 8px 20px rgba(212,175,55,.25);
+}
+
+
+
+/* VIEW DETAILS */
+
+.product-detail{
+    color:#D4AF37;
+    font-size:12px;
+    white-space:nowrap;
+    transition:.3s;
+}
+
+.product-detail:hover{
+    color:#F2D46B;
+    transform:translateX(3px);
+}
+
+
+
+/* VIEW ALL */
+
+.products-footer{
+    display:flex;
+    justify-content:center;
+    margin-top:50px;
+}
+
+/* ===== WHY CHOOSE US ===== */
+
+.why{
+    background:
+        radial-gradient(
+            circle at 50% 50%,
+            rgba(212,175,55,.04),
+            transparent 55%
+        );
+}
+
+
+/* SECTION DESCRIPTION */
+
+.why .section-title{
+    max-width:700px;
+    margin:0 auto 60px;
+}
+
+.why .section-title span{
+    color:#D4AF37;
+    font-size:12px;
+    letter-spacing:4px;
+    font-weight:500;
+}
+
+.why .section-title h2{
+    font-family:'Cormorant Garamond', serif;
+    font-size:48px;
+    font-weight:600;
+    margin:12px 0 15px;
+}
+
+.why .section-title p{
+    color:#999;
+    font-size:15px;
+    line-height:1.8;
+}
+
+
+/* WHY GRID */
+
+.why-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:22px;
+}
+
+
+/* WHY CARD */
+
+.why-card{
+    position:relative;
+
+    padding:40px 28px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #191919,
+            #101010
+        );
+
+    border:1px solid rgba(212,175,55,.12);
+
+    border-radius:22px;
+
+    text-align:center;
+
+    transition:.4s ease;
+
+    overflow:hidden;
+}
+
+
+/* GOLD TOP LINE */
+
+.why-card::before{
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:50%;
+
+    width:0;
+    height:2px;
+
+    background:#D4AF37;
+
+    transform:translateX(-50%);
+
+    transition:.4s ease;
+}
+
+
+/* ICON */
+
+.why-icon{
+    width:60px;
+    height:60px;
+
+    margin:0 auto 22px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    color:#D4AF37;
+
+    background:rgba(212,175,55,.08);
+
+    border:1px solid rgba(212,175,55,.18);
+
+    font-size:21px;
+
+    transition:.4s ease;
+}
+
+
+/* TITLE */
+
+.why-card h3{
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:25px;
+
+    font-weight:600;
+
+    color:#fff;
+
+    margin-bottom:12px;
+}
+
+
+/* DESCRIPTION */
+
+.why-card p{
+    color:#888;
+
+    font-size:13px;
+
+    line-height:1.8;
+}
+
+
+/* HOVER */
+
+.why-card:hover{
+    transform:translateY(-8px);
+
+    border-color:rgba(212,175,55,.45);
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.4),
+        0 0 25px rgba(212,175,55,.06);
+}
+
+.why-card:hover::before{
+    width:60%;
+}
+
+.why-card:hover .why-icon{
+    background:#D4AF37;
+    color:#111;
+
+    transform:translateY(-3px);
+}
+
+/* ===== CONTACT ===== */
+
+.contact{
+    text-align:center;
+}
+
+.contact a{
+    display:inline-block;
+    margin-top:25px;
+    background:#D4AF37;
+    color:black;
+    padding:15px 35px;
+    border-radius:40px;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+    background:#090909;
+    padding:60px;
+    border-top:1px solid rgba(212,175,55,.15);
+}
+
+.social{
+    margin:20px 0;
+}
+
+.social a{
+    color:#D4AF37;
+    font-size:22px;
+    margin:0 10px;
+}
+
+/* ===== HERO BRAND DIVIDER ===== */
+
+.hero h1{
+    font-size:68px;
+    line-height:1.05;
+    font-family:'Cinzel',serif;
+    font-weight:600;
+    letter-spacing:1px;
+    margin-bottom:25px;
+    color:#F5F5F5;
+}
+
+.hero h1 span{
+    color:#D4AF37;
+}
+
+/* ===== ELEGANT SUN DIVIDER ===== */
+
+.sun-divider{
+    display:flex;
+    align-items:center;
+    gap:16px;
+    width:560px;
+    max-width:100%;
+    margin:8px 0 28px;
+}
+
+/* garis kiri */
+.sun-divider > span:first-child{
+    height:1px;
+    flex:1;
+    background:linear-gradient(
+        to right,
+        transparent,
+        rgba(212,175,55,.75)
+    );
+}
+
+/* garis kanan */
+.sun-divider > span:last-child{
+    height:1px;
+    flex:1;
+    background:linear-gradient(
+        to left,
+        transparent,
+        rgba(212,175,55,.75)
+    );
+}
+
+
+/* ===== MATAHARI ===== */
+
+.sun-icon{
+    width:34px;
+    height:34px;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
+}
+
+
+/* lingkaran matahari */
+
+.sun-icon .sun-core{
+    width:10px;
+    height:10px;
+    background:#D4AF37;
+    border-radius:50%;
+
+    box-shadow:
+        0 0 6px rgba(212,175,55,.6);
+}
+
+
+/* sinar utama */
+
+.sun-icon::before{
+    content:"";
+    position:absolute;
+
+    width:28px;
+    height:28px;
+
+    border-radius:50%;
+
+    background:
+        linear-gradient(#D4AF37,#D4AF37)
+        center top / 1px 6px no-repeat,
+
+        linear-gradient(#D4AF37,#D4AF37)
+        center bottom / 1px 6px no-repeat,
+
+        linear-gradient(#D4AF37,#D4AF37)
+        left center / 6px 1px no-repeat,
+
+        linear-gradient(#D4AF37,#D4AF37)
+        right center / 6px 1px no-repeat;
+
+    opacity:.75;
+}
+
+
+/* sinar diagonal */
+
+.sun-icon::after{
+    content:"";
+    position:absolute;
+
+    width:28px;
+    height:28px;
+
+    border-radius:50%;
+
+    background:
+        linear-gradient(
+            45deg,
+            transparent 47%,
+            #D4AF37 48%,
+            #D4AF37 52%,
+            transparent 53%
+        ),
+
+        linear-gradient(
+            -45deg,
+            transparent 47%,
+            #D4AF37 48%,
+            #D4AF37 52%,
+            transparent 53%
+        );
+
+    opacity:.55;
+}
+
+/* =========================================
+   PAGE TRANSITION
+========================================= */
+
+body {
+    opacity: 0;
+    animation: pageFadeIn 0.5s ease forwards;
+}
+
+@keyframes pageFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Saat pindah halaman */
+
+body.page-exit {
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+
+/* =====================================================
+   PRODUCTS PAGE
+===================================================== */
+
+.products-page {
+    min-height: 100vh;
+    padding: 160px 8% 100px;
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(212,175,55,.08),
+            transparent 35%
+        );
+}
+
+
+/* ===== PRODUCTS HEADING ===== */
+
+.products-heading {
+    max-width: 750px;
+    margin: 0 auto 70px;
+    text-align: center;
+}
+
+.products-heading > span {
+    color: #D4AF37;
+    font-size: 14px;
+    letter-spacing: 4px;
+    font-weight: 500;
+}
+
+.products-heading h1 {
+    margin-top: 18px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 64px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.products-heading h1 strong {
+    color: #D4AF37;
+    font-weight: 600;
+}
+
+.products-heading p {
+    margin-top: 25px;
+    color: #BFBFBF;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* ===== PRODUCT GRID ===== */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+/* ===== PRODUCT ITEM ===== */
+
+.product-item {
+    background: linear-gradient(
+        145deg,
+        #181818,
+        #101010
+    );
+
+    border: 1px solid rgba(212,175,55,.15);
+    border-radius: 24px;
+    overflow: hidden;
+    transition: .4s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-8px);
+    border-color: rgba(212,175,55,.6);
+    box-shadow:
+        0 20px 50px rgba(212,175,55,.12);
+}
+
+
+/* ===== PRODUCT IMAGE ===== */
+
+.product-image {
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background:
+        radial-gradient(
+            circle,
+            rgba(212,175,55,.12),
+            transparent 65%
+        );
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: .4s ease;
+}
+
+.product-item:hover .product-image img {
+    transform: scale(1.05);
+}
+
+
+/* ===== PRODUCT INFO ===== */
+
+.product-info {
+    padding: 30px;
+}
+
+.product-info > span {
+    color: #D4AF37;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.product-info h2 {
+    margin-top: 10px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.product-info p {
+    color: #BFBFBF;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 12px 0 25px;
+}
+
+
+/* ===== SHOPEE BUTTON ===== */
+
+.product-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #111;
+    background: #D4AF37;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.product-button:hover {
+    background: #F2D46B;
+    transform: translateY(-3px);
+    box-shadow:
+        0 10px 25px rgba(212,175,55,.25);
+}
+
+/* ===== PAGE TRANSITION ===== */
+
+
+
+/* ================= PRODUCT IMAGE CAROUSEL ================= */
+
+.product-gallery {
+    position: relative;
+    width: 100%;
+    height: 270px;
+    overflow: hidden;
+    background: #111;
+}
+
+.gallery-track {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.45s ease;
+}
+
+.gallery-track img {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* Tombol kiri kanan */
+
+.gallery-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 38px;
+    height: 38px;
+
+    border: 1px solid rgba(212,175,55,.5);
+    border-radius: 50%;
+
+    background: rgba(10,10,10,.75);
+    color: #D4AF37;
+
+    cursor: pointer;
+    z-index: 5;
+
+    transition: .3s;
+}
+
+.gallery-btn:hover {
+    background: #D4AF37;
+    color: #111;
+}
+
+.gallery-prev {
+    left: 12px;
+}
+
+.gallery-next {
+    right: 12px;
+}
+
+/* Titik indikator */
+
+.gallery-dots {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    gap: 7px;
+
+    z-index: 5;
+}
+
+.gallery-dots span {
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,.4);
+
+    transition: .3s;
+}
+
+.gallery-dots span.active {
+    width: 20px;
+    border-radius: 10px;
+    background: #D4AF37;
+}
+
+
+/* ================= PRODUCT IMAGE ================= */
+
+.product-card .product-image {
+    width: 100%;
+    height: 360px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ================= PRODUCT INFO ================= */
+
+.product-card .product-info {
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* =========================================
+   FIX PRODUCT CARD ALIGNMENT
+   ========================================= */
+
+/* Semua card dibuat sebagai kolom */
+.product-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Bagian informasi mengisi ruang yang tersedia */
+.product-card .product-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+/* Deskripsi */
+.product-card .product-info p {
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.7;
+    min-height: 72px;
+}
+
+/* Tombol selalu didorong ke bagian paling bawah */
+.product-card .product-bottom {
+    margin-top: auto;
+    padding-top: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+/* Biar tombol tidak berubah ukuran */
+.product-card .btn-shopee {
+    flex-shrink: 0;
+}
+
+.product-card .product-detail {
+    flex-shrink: 0;
+}
