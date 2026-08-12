@@ -24,6 +24,9 @@
 
 <body>
 
+
+<!-- ================ END CINEMATIC INTRO ================ -->
+
     <!--================ NAVBAR ================-->
 
     <header>
@@ -56,63 +59,71 @@
 
     <!--================ HERO ================-->
 
-<section class="hero">
+<!--================ HERO ================-->
 
-    <!-- HERO TEXT -->
-    <div class="hero-text">
+<section class="hero-video">
 
-        <div class="small-title">
+    <!-- VIDEO BACKGROUND -->
+    <video
+        class="hero-video-bg"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+    >
+        <source src="videos/hero-distribution.mp4" type="video/mp4">
+    </video>
+
+    <!-- DARK OVERLAY -->
+    <div class="hero-video-overlay"></div>
+
+    <!-- HERO CONTENT -->
+    <div class="hero-video-content">
+
+        <span class="hero-video-label">
             PREMIUM INDONESIAN MANUFACTURER
-        </div>
+        </span>
 
-        <h1 class="hero-title">
-            <span class="matahari">MATAHARI</span>
-            <span class="jaya">JAYA</span>
+        <h1>
+            MATAHARI JAYA
         </h1>
 
-        <!-- GOLD DIVIDER -->
-        <div class="sun-divider">
+        <div class="hero-video-divider">
             <span></span>
-            <div class="sun-icon">
-            <div class="sun-core"></div>
+            <i class="fa-solid fa-sun"></i>
+            <span></span>
         </div>
 
-            <span></span>
-
-        </div>
-
-        <p class="hero-tagline">
-            Bringing Authentic Indonesian Snacks to the Global Market.
+        <p class="hero-video-tagline">
+            Indonesian Snacks, Ready for the World.
         </p>
 
-        <p class="hero-description">
-            Delivering high-quality snack products made from carefully
-            selected ingredients, processed hygienically, and crafted
-            for customers around the world.
+        <p class="hero-video-description">
+            Quality Indonesian snacks prepared with care,
+            from production to distribution.
         </p>
 
-        <div class="hero-button">
+        <div class="hero-video-buttons">
+
             <a href="products.html" class="btn-gold">
                 Explore Products
             </a>
 
-            <a href="#about" class="btn-outline">
-                Learn More
+            <a href="about.html" class="btn-outline">
+                Discover Our Story
             </a>
+
         </div>
 
     </div>
 
-
-    <!-- HERO LOGO -->
-    <div class="hero-image">
-
-        <div class="hero-logo">
-            <img src="images/logo.png" alt="Matahari Jaya Logo">
-        </div>
-
+    <!-- SCROLL INDICATOR -->
+    <div class="hero-scroll">
+        <span>SCROLL TO EXPLORE</span>
+        <i class="fa-solid fa-chevron-down"></i>
     </div>
-
+   
 </section>
 
     <!--================ ABOUT ================-->
@@ -124,7 +135,7 @@
         <div class="about-image-frame">
 
             <img 
-                src="images/mj.jpeg" 
+                src="images/etalase.png" 
                 alt="Matahari Jaya"
             >
 
@@ -136,27 +147,25 @@
     <div class="about-text">
 
         <span class="about-label">
-            ABOUT MATAHARI JAYA
-        </span>
+    ABOUT MATAHARI JAYA
+</span>
 
-        <h2>
-            Bringing Indonesian Snacks
-            <span>to the World</span>
-        </h2>
+<h2>
+    From Indonesia,
+    <span>Growing Beyond Borders</span>
+</h2>
 
-        <p>
-            Matahari Jaya is an Indonesian snack manufacturer
-            focused on producing quality snack products using
-            carefully selected ingredients and hygienic
-            production processes.
-        </p>
+<p>
+    Matahari Jaya is a growing Indonesian snack manufacturer
+    dedicated to developing authentic snack products with
+    a focus on quality, consistency, and continuous improvement.
+</p>
 
-        <p>
-            We are continuously developing our products and
-            building a strong foundation to bring authentic
-            Indonesian snacks to a wider market.
-        </p>
-
+<p>
+    Starting from Indonesia, we are building a strong
+    foundation to introduce our products to a wider market
+    while creating opportunities for future partnerships.
+</p>
 
         <!-- FEATURES -->
 
@@ -266,7 +275,7 @@
                 <!-- FOTO-FOTO BASRENG -->
                 <div class="gallery-track">
 
-                    <img src="images/products/1.png"
+                    <img src="images/products/basreng-1.jpeg"
                         alt="Spicy Basreng">
 
                     <img src="images/products/basreng-3.jpeg"
@@ -364,7 +373,7 @@
                 <!-- FOTO-FOTO ENDOG LEWO -->
                 <div class="gallery-track">
 
-                    <img src="images/products/endog-lewo.png"
+                    <img src="images/products/endoglewoo.jpeg"
                         alt="Spicy Endog Lewo">
 
                     <img src="images/products/endoglewo1.jpeg"
@@ -457,7 +466,7 @@
                 <!-- FOTO-FOTO ENDOG LEWO -->
                 <div class="gallery-track">
 
-                    <img src="images/products/salepisang.png"
+                    <img src="images/products/salepisangg.jpeg"
                         alt="Sale Pisang Lidah">
 
                     <img src="images/products/salepisang1.jpeg"
@@ -553,6 +562,99 @@
         <a href="#" class="btn-outline">
             View All Products
         </a>
+
+    </div>
+
+</section>
+
+    <!--================ CERTIFICATIONS ================-->
+
+<section class="certifications" id="certifications">
+
+    <div class="section-title">
+
+        <span>CERTIFICATIONS & COMPLIANCE</span>
+
+        <h2>
+            Quality You Can Trust
+        </h2>
+
+        <p>
+            We are committed to maintaining product quality,
+            food safety, and compliance with applicable standards.
+        </p>
+
+    </div>
+
+
+    <div class="certification-container">
+
+        <!-- PIRT -->
+        <div class="certification-card">
+
+            <div class="certification-icon">
+                <i class="fa-solid fa-file-circle-check"></i>
+            </div>
+
+            <div class="certification-content">
+
+                <span class="certification-label">
+                    FOOD REGISTRATION
+                </span>
+
+                <h3>
+                    PIRT
+                </h3>
+
+                <p>
+                    Registered food production certification
+                    supporting the safety and quality of our products.
+                </p>
+
+                <div class="certification-number">
+                    <span>Registration No.</span>
+                    <strong>YOUR PIRT NUMBER</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- HALAL -->
+        <div class="certification-card">
+
+            <div class="certification-icon">
+                <i class="fa-solid fa-certificate"></i>
+            </div>
+
+            <div class="certification-content">
+
+                <span class="certification-label">
+                    HALAL ASSURANCE
+                </span>
+
+                <h3>
+                    Halal Certification
+                </h3>
+
+                <p>
+                    Our products have previously been certified
+                    halal under the applicable halal assurance system.
+                </p>
+
+                <div class="certification-number">
+                    <span>Previous Certificate No.</span>
+                    <strong>ID32110000360830622</strong>
+                </div>
+
+                <small class="certification-note">
+                    Certificate issued in 2022. Renewal/update in progress.
+                </small>
+
+            </div>
+
+        </div>
 
     </div>
 

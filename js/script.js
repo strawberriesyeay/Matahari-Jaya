@@ -166,3 +166,50 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+/* =====================================================
+   CINEMATIC INTRO
+===================================================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const intro = document.getElementById("cinematicIntro");
+    const video = document.getElementById("introVideo");
+    const skipButton = document.getElementById("skipIntro");
+
+    if (!intro || !video) return;
+
+
+    // Hide intro
+    function hideIntro() {
+
+        intro.classList.add("hide-intro");
+
+        // Setelah fade selesai, hapus dari layar
+        setTimeout(() => {
+            intro.style.display = "none";
+        }, 1000);
+
+    }
+
+
+    // Saat video selesai
+    video.addEventListener("ended", () => {
+        hideIntro();
+    });
+
+
+    // Tombol Skip
+    if (skipButton) {
+
+        skipButton.addEventListener("click", () => {
+
+            video.pause();
+
+            hideIntro();
+
+        });
+
+    }
+
+});
