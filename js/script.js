@@ -213,3 +213,88 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 });
+
+/* =====================================================
+   PIRT CERTIFICATE VIEWER
+===================================================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const viewer = document.getElementById("certificateViewer");
+    const viewerImage = document.getElementById("certificateViewerImage");
+    const closeButton = document.querySelector(".certificate-close");
+
+    const certificates = document.querySelectorAll(".pirt-certificate");
+
+    if (!viewer || !viewerImage) return;
+
+
+    /* OPEN CERTIFICATE */
+
+    certificates.forEach(certificate => {
+
+        certificate.addEventListener("click", function () {
+
+            viewerImage.src = this.src;
+            viewerImage.alt = this.alt;
+
+            viewer.classList.add("active");
+
+            document.body.style.overflow = "hidden";
+
+        });
+
+    });
+
+
+    /* CLOSE BUTTON */
+
+    if (closeButton) {
+
+        closeButton.addEventListener("click", () => {
+
+            viewer.classList.remove("active");
+
+            viewerImage.src = "";
+
+            document.body.style.overflow = "";
+
+        });
+
+    }
+
+
+    /* CLICK DARK AREA TO CLOSE */
+
+    viewer.addEventListener("click", function (event) {
+
+        if (event.target === viewer) {
+
+            viewer.classList.remove("active");
+
+            viewerImage.src = "";
+
+            document.body.style.overflow = "";
+
+        }
+
+    });
+
+
+    /* ESC */
+
+    document.addEventListener("keydown", function (event) {
+
+        if (event.key === "Escape") {
+
+            viewer.classList.remove("active");
+
+            viewerImage.src = "";
+
+            document.body.style.overflow = "";
+
+        }
+
+    });
+
+});
