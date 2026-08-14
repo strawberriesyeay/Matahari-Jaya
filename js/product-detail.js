@@ -369,6 +369,39 @@ document.addEventListener("DOMContentLoaded", () => {
         "ID321100000360830622"
 },
 
+"coco-ring": {
+    name: "Coco Crunch · Fruit Ring",
+    category: "SWEET SNACK",
+    image: "images/products/2.jpg",
+
+    description:
+        "A crunchy and sweet cereal snack available in three delicious variants: Coco Chocolate, Coco Fruit, and Fruit Frank, made with selected ingredients and Dancow milk.",
+
+    composition:
+        "Cereal-based ingredients, milk powder, sugar, cocoa or fruit flavoring depending on the variant, selected ingredients, and other food ingredients.",
+
+    weight:
+        "Available in 500 g",
+
+    shelfLife:
+        "Approximately 6 months from the production date when stored properly.",
+
+    origin:
+        "Indonesia",
+
+    packaging:
+        "Available in retail packaging with three variants: Coco Chocolate, Coco Fruit, and Fruit Frank.",
+
+    type:
+        "Sweet Snack",
+
+    pirt:
+        "2053204012827-29",
+
+    halal:
+        "ID321100000360830622"
+},
+
 
 
     };
@@ -415,4 +448,8 @@ document.getElementById("productHalal").textContent =
 document.getElementById("productImage").src = data.image;
 
 document.getElementById("productImage").alt = data.name;
+
+if (product === "coco-ring") {
+    document.getElementById("productImage").style.transform = "scale(1.35)";
+}
 });
