@@ -336,6 +336,39 @@ document.addEventListener("DOMContentLoaded", () => {
         "ID321100000360830622"
 },
 
+"momo-stik": {
+    name: "Momo Stik",
+    category: "INDONESIAN SNACK",
+    image: "images/products/momostikk.jpg",
+
+    description:
+        "Crispy and tasty Momo Stik available in three delicious variants: Pandan, Chocolate, and Durian. Made to deliver a crunchy and enjoyable snack experience for every occasion.",
+
+    composition:
+        "Starch-based snack ingredients, selected seasonings, cooking oil, and flavoring ingredients according to the selected variant.",
+
+    weight:
+        "Available in 500 g · 1 kg",
+
+    shelfLife:
+        "Approximately 12 months from the production date when stored properly.",
+
+    origin:
+        "Indonesia",
+
+    packaging:
+        "Available in retail packaging with three flavor variants: Pandan, Chocolate, and Durian.",
+
+    type:
+        "Sweet Snack",
+
+    pirt:
+        "2053204012827-29",
+
+    halal:
+        "ID321100000360830622"
+},
+
 
 
     };
