@@ -369,6 +369,39 @@ document.addEventListener("DOMContentLoaded", () => {
         "ID321100000360830622"
 },
 
+"breakfast": {
+    name: "Complete Indonesian Breakfast Package",
+    category: "BREAKFAST PACKAGE",
+    image: "images/products/breakfast.jpeg",
+
+    description:
+        "A convenient Indonesian breakfast package combining savory rice balls, Coco Crunch cereal, and full cream milk. Designed as a practical and satisfying breakfast option with a combination of savory and sweet flavors.",
+
+    composition:
+        "Rice balls, Coco Crunch cereal, and full cream milk with selected ingredients",
+
+    weight:
+        "Available in selected package sizes.",
+
+    shelfLife:
+        "Approximately 6 months from the production date when stored properly.",
+
+    origin:
+        "Indonesia",
+
+    packaging:
+        "Available in retail packaging with three variants: Coco Chocolate, Coco Fruit, and Fruit Frank.",
+
+    type:
+        "Breakfast Package",
+
+    pirt:
+        "2053204012827-29",
+
+    halal:
+        "ID321100000360830622"
+},
+
 "coco-ring": {
     name: "Coco Crunch · Fruit Ring",
     category: "SWEET SNACK",
@@ -378,7 +411,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "A crunchy and sweet cereal snack available in three delicious variants: Coco Chocolate, Coco Fruit, and Fruit Frank, made with selected ingredients and Dancow milk.",
 
     composition:
-        "Cereal-based ingredients, milk powder, sugar, cocoa or fruit flavoring depending on the variant, selected ingredients, and other food ingredients.",
+        "Cereal-based ingredients, milk powder, sugar, and chocolate or fruit flavoring.",
 
     weight:
         "Available in 500 g",
@@ -394,6 +427,138 @@ document.addEventListener("DOMContentLoaded", () => {
 
     type:
         "Sweet Snack",
+
+    pirt:
+        "2053204012827-29",
+
+    halal:
+        "ID321100000360830622"
+},
+
+"snack-cup": {
+    name: "Snack Cup",
+    category: "BUSINESS PACKAGE",
+    image: "images/products/snackcup.jpeg",
+
+    description:
+        "A practical and attractive snack package designed for business, resale, and everyday snacking. Each box contains 30 individual snack cups with a variety of tasty snack selections.",
+
+    composition:
+        "Assorted snack varieties selected according to the available package.",
+
+    weight:
+        "Available according to the selected snack cup contents.",
+
+    shelfLife:
+        "Approximately 6 months from the production date when stored properly.",
+
+    origin:
+        "Indonesia",
+
+    packaging:
+        "1 box contains 30 individual snack cups with practical and hygienic packaging.",
+
+    type:
+        "Business Snack Package",
+
+    pirt:
+        "2053204012827-29",
+
+    halal:
+        "ID321100000360830622"
+},
+
+"banana-fingers": {
+    name: "Banana Fingers",
+    category: "INDONESIAN SNACK",
+    image: "images/products/salejari.jpg",
+
+    description:
+        "A crispy traditional Indonesian banana snack made from selected bananas, offering a naturally sweet flavor and satisfying crunchy texture.",
+
+    composition:
+        "Selected bananas, flour, sugar, and cooking oil.",
+
+    weight:
+        "Available in 500 g.",
+
+    shelfLife:
+        "Approximately 6 months from the production date when stored properly.",
+
+    origin:
+        "Indonesia",
+
+    packaging:
+        "Available in practical retail packaging suitable for everyday snacking and distribution.",
+
+    type:
+        "Traditional Banana Snack",
+
+    pirt:
+        "2053204012827-29",
+
+    halal:
+        "ID321100000360830622"
+},
+
+"crispy-chicken-skin": {
+    name: "Crispy Chicken Skin",
+    category: "INDONESIAN SNACK",
+    image: "images/products/kulitayam.jpg",
+
+    description:
+        "A crispy and savory Indonesian snack made from selected chicken skin, seasoned with carefully selected spices for a delicious and satisfying crunch.",
+
+    composition:
+        "Chicken skin, tapioca flour, garlic, salt, chili, selected spices, seasoning, and cooking oil.",
+
+    weight:
+        "Available in 500 g.",
+
+    shelfLife:
+        "Approximately 6 months from the production date when stored properly.",
+
+    origin:
+        "Indonesia",
+
+    packaging:
+        "Available in practical retail packaging suitable for everyday snacking and distribution.",
+
+    type:
+        "Traditional Banana Snack",
+
+    pirt:
+        "2053204012827-29",
+
+    halal:
+        "ID321100000360830622"
+},
+
+"snack-cup-pack": {
+    name: "Snack Cup",
+    category: "SNACK PACKAGE",
+    image: "images/products/pack.jpeg",
+
+    description:
+        "A practical assorted snack package featuring a variety of Indonesian snacks in individual portions, suitable for everyday snacking, retail, and business purposes.",
+
+    composition:
+        "Rice Ball, Coco Crunch Chocolate, Coco Crunch Fruit, Fruit Ring, Es Bul Chocolate Durian, Es Bul Pandan Mango, and Endog Lewo.",
+
+    weight:
+        "Available in 1.5 kg.",
+
+    shelfLife:
+        "Approximately 6 months from the production date when stored properly.",
+
+    origin:
+        "Indonesia",
+
+    packaging:
+        "Available in practical retail packaging suitable for everyday snacking and distribution.",
+
+    type:
+        "Package Snack",
 
     pirt:
         "2053204012827-29",
@@ -449,7 +614,4 @@ document.getElementById("productImage").src = data.image;
 
 document.getElementById("productImage").alt = data.name;
 
-if (product === "coco-ring") {
-    document.getElementById("productImage").style.transform = "scale(1.35)";
-}
 });
