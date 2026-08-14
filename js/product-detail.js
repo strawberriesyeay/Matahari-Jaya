@@ -237,6 +237,106 @@ document.addEventListener("DOMContentLoaded", () => {
         "ID321100000360830622"
 },
 
+"coco-crunch-fruit": {
+    name: "Coco Crunch Fruit",
+    category: "SWEET SNACK",
+    image: "images/products/cocobuah.jpeg",
+
+    description:
+        "A crispy and flavorful Indonesian snack made from selected ingredients, combined with a sweet and crunchy fruit-inspired flavor for a satisfying taste.",
+
+    composition:
+        "Coco crunch, selected cereal ingredients, fruit flavoring, sugar, milk ingredients, and other food-grade ingredients.",
+
+    weight:
+        "Available in 500 g · 900 g",
+
+    shelfLife:
+        "6 Months",
+
+    origin:
+        "Indonesia",
+
+    packaging:
+        "Available in retail packaging and suitable for convenient storage.",
+
+    type:
+        "Sweet Crunchy Snack",
+
+    pirt:
+        "2053204012827-29",
+
+    halal:
+        "ID321100000360830622"
+},
+
+"coco-crunch-chocolate": {
+    name: "Coco Crunch Chocolate",
+    category: "SWEET SNACK",
+    image: "images/products/cocochocolate.jpeg",
+
+    description:
+        "A crispy and flavorful Indonesian snack made from selected ingredients, combined with a sweet and crunchy fruit-inspired flavor for a satisfying taste.",
+
+    composition:
+        "Coco crunch, selected cereal ingredients, fruit flavoring, sugar, milk ingredients, and other food-grade ingredients.",
+
+    weight:
+        "Available in 500 g · 900 g",
+
+    shelfLife:
+        "6 Months",
+
+    origin:
+        "Indonesia",
+
+    packaging:
+        "Available in retail packaging and suitable for convenient storage.",
+
+    type:
+        "Chocolate Crunchy Snack",
+
+    pirt:
+        "2053204012827-29",
+
+    halal:
+        "ID321100000360830622"
+},
+
+"cassava-chips": {
+    name: "Cassava Chips",
+    category: "INDONESIAN SNACK",
+    image: "images/products/cassavachips.jpeg",
+
+    description:
+        "Crispy cassava chips made from carefully selected cassava, offering a light, crunchy texture and savory Indonesian snack experience.",
+
+    composition:
+        "Cassava, cooking oil, salt, and selected seasonings.",
+
+    weight:
+        "Available in 1 kg",
+
+    shelfLife:
+        "Approximately 6 months from the production date when stored properly.",
+
+    origin:
+        "Indonesia",
+
+    packaging:
+        "Available in retail packaging with sealed packaging designed to maintain the product's quality and freshness.",
+
+    type:
+        "Cassava Chips",
+
+    pirt:
+        "2053204012827-29",
+
+    halal:
+        "ID321100000360830622"
+},
+
+
 
     };
     
