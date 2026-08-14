@@ -102,8 +102,144 @@ document.addEventListener("DOMContentLoaded", () => {
 
     halal:
         "ID321100000360830622"
-}
+},
+
+"keripik-tempe": {
+    name: "Keripik Tempe",
+    category: "INDONESIAN SNACK",
+    image: "images/products/keripiktempe.jpeg",
+
+    description:
+        "Crispy tempe chips made from selected tempe and carefully chosen seasonings, delivering a savory, crunchy, and authentic Indonesian snack experience.",
+
+    composition:
+        "Tempe, tapioca flour, wheat flour, garlic, salt, selected spices, seasoning, and cooking oil.",
+
+    weight:
+        "Available in 500 g",
+
+    shelfLife:
+        "Approximately 6 months from the production date when stored properly.",
+
+    origin:
+        "Indonesia",
+
+    packaging:
+        "Available in retail packaging with sealed packaging designed to maintain the product's quality and freshness.",
+
+    type:
+        "Tempe Chips",
+
+    pirt:
+        "2053204280576-31",
+
+    halal:
+        "ID321100000360830622"
+},
+
+"usus-pedas": {
+    name: "Usus Pedas",
+    category: "SPICY SNACK",
+    image: "images/products/ususpedas.jpeg",
+
+    description:
+        "A crispy Indonesian snack made from carefully selected chicken intestines, seasoned with a spicy and savory blend of spices for a bold and satisfying taste.",
+
+    composition:
+        "Chicken intestines, tapioca flour, garlic, salt, chili, selected spices, seasoning, and cooking oil.",
+
+    weight:
+        "Available in 500 g",
+
+    shelfLife:
+        "Approximately 6 months from the production date when stored properly.",
+
+    origin:
+        "Indonesia",
+
+    packaging:
+        "Available in retail packaging with sealed packaging designed to maintain the product's quality and freshness.",
+
+    type:
+        "Spicy Crispy Snack",
+
+    pirt:
+        "2053204012827-29",
+
+    halal:
+        "ID321100000360830622"
+},
+
+
+"endog-lewo-original": {
+    name: "Endog Lewo Original",
+    category: "INDONESIAN SNACK",
+    image: "images/products/endoglewoori.jpeg",
+
+    description:
+        "A traditional Indonesian snack with a crispy texture and savory original flavor, made from carefully selected ingredients and prepared to deliver a satisfying taste in every bite.",
+
+    composition:
+        "Tapioca flour, selected spices, garlic, salt, seasoning, and cooking oil.",
+
+    weight:
+        "Available in 500 g",
+
+    shelfLife:
+        "Approximately 6 months from the production date when stored properly.",
+
+    origin:
+        "Indonesia",
+
+    packaging:
+        "Available in retail packaging with sealed packaging designed to maintain the product's quality and freshness.",
+
+    type:
+        "Traditional Crispy Snack",
+
+    pirt:
+        "2053204190576-31",
+
+    halal:
+        "ID321100000360830622"
+},
+
+"basreng-original": {
+    name: "Basreng Original",
+    category: "INDONESIAN SNACK",
+    image: "images/products/basrengori.jpeg",
+
+    description:
+        "A crispy Indonesian snack made from seasoned fish meatball, offering a savory, aromatic, and satisfying taste with a crunchy texture.",
+
+    composition:
+        "Fish meatball (fish, tapioca flour, seasoning), tapioca flour, garlic, salt, spices, flavoring, and cooking oil.",
+
+    weight:
+        "Available in 250 g · 500 g",
+
+    shelfLife:
+        "6 Months",
+
+    origin:
+        "Indonesia",
+
+    packaging:
+        "Available in retail packaging with sealed packaging designed to help maintain product quality and freshness.",
+
+    type:
+        "Crispy Savory Snack",
+
+    pirt:
+        "2053204080576-29",
+
+    halal:
+        "ID321100000360830622"
+},
+
+
     };
+    
 
 
     const data = products[product];
