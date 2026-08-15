@@ -43,7 +43,25 @@
             <a href="#about">About</a>
             <a href="products.html">Products</a>
             <a href="gallery.html">Gallery</a>
-            <a href="contact.html">Contact</a>
+
+
+            <div class="language-selector">
+            <button type="button" id="languageButton">
+            <i class="fas fa-globe"></i>
+        <span id="currentLanguage">EN</span>
+            <i class="fas fa-chevron-down"></i>
+        </button>
+
+    <div class="language-menu" id="languageMenu">
+        <button type="button" data-lang="en">
+            🇬🇧 English
+        </button>
+
+        <button type="button" data-lang="id">
+            🇮🇩 Indonesia
+        </button>
+    </div>
+</div>
 
         </nav>
 
@@ -509,6 +527,118 @@ activityDots.forEach((dot, index) => {
 });
 
 </script>
+
+<script>
+
+/* ================= LANGUAGE MENU ================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const languageButton = document.getElementById("languageButton");
+    const languageMenu = document.getElementById("languageMenu");
+    const currentLanguage = document.getElementById("currentLanguage");
+
+    if (!languageButton || !languageMenu) return;
+
+
+    /* BUKA / TUTUP MENU */
+
+    languageButton.addEventListener("click", function (e) {
+
+        e.stopPropagation();
+
+        languageMenu.classList.toggle("active");
+
+    });
+
+
+    /* PILIH BAHASA */
+
+    document.querySelectorAll(".language-menu button").forEach(function (button) {
+
+        button.addEventListener("click", function (e) {
+
+            e.stopPropagation();
+
+            const language = this.dataset.lang;
+
+            translatePage(language);
+
+            currentLanguage.textContent =
+                language === "id" ? "ID" : "EN";
+
+            languageMenu.classList.remove("active");
+
+        });
+
+    });
+
+
+    /* KLIK DI LUAR MENU */
+
+    document.addEventListener("click", function () {
+
+        languageMenu.classList.remove("active");
+
+    });
+
+});
+
+
+/* ================= GOOGLE TRANSLATE ================= */
+
+function translatePage(language) {
+
+    const tryTranslate = setInterval(function () {
+
+        const select = document.querySelector(".goog-te-combo");
+
+        if (select) {
+
+            select.value = language;
+
+            select.dispatchEvent(
+                new Event("change")
+            );
+
+            clearInterval(tryTranslate);
+
+        }
+
+    }, 300);
+
+
+    setTimeout(function () {
+
+        clearInterval(tryTranslate);
+
+    }, 10000);
+
+}
+
+
+/* ================= GOOGLE TRANSLATE INIT ================= */
+
+function googleTranslateElementInit() {
+
+    new google.translate.TranslateElement({
+
+        pageLanguage: "en",
+        includedLanguages: "en,id",
+        autoDisplay: false
+
+    }, "google_translate_element");
+
+}
+
+</script>
+
+
+<!-- GOOGLE TRANSLATE -->
+
+<div id="google_translate_element" style="display: none;"></div>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
 </html>

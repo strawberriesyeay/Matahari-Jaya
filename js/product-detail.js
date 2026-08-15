@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "sale-pisang": {
     name: "Sale Pisang",
     category: "INDONESIAN SNACK",
-    image: "images/products/salepisangg.jpeg",
+    image: "images/products/salee.jpg",
 
     description:
         "A traditional Indonesian banana snack with a naturally sweet and distinctive flavor.",

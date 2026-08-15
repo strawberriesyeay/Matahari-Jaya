@@ -6484,3 +6484,225 @@ body.page-exit {
     background: transparent;
     color: #D4AF37 !important;
 }
+
+/* =========================================
+   GOOGLE TRANSLATE
+========================================= */
+
+#google_translate_element {
+    position: fixed;
+    top: 92px;
+    right: 30px;
+    z-index: 9999;
+}
+
+.goog-te-gadget {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 0 !important;
+}
+
+.goog-te-gadget .goog-te-combo {
+    background: #111;
+    color: #D4AF37;
+    border: 1px solid rgba(212, 175, 55, 0.6);
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    outline: none;
+    cursor: pointer;
+}
+
+.goog-te-gadget .goog-te-combo:hover {
+    border-color: #D4AF37;
+}
+
+
+/* Google Translate bar */
+
+body {
+    top: 0 !important;
+}
+
+.goog-te-banner-frame {
+    display: none !important;
+}
+
+.goog-te-balloon-frame {
+    display: none !important;
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 600px) {
+
+    #google_translate_element {
+        top: 78px;
+        right: 15px;
+    }
+
+    .goog-te-gadget .goog-te-combo {
+        padding: 7px 9px;
+        font-size: 10px;
+    }
+
+}
+
+/* =========================================
+   LANGUAGE SELECTOR
+========================================= */
+
+.language-selector {
+    position: relative;
+    margin-left: 10px;
+}
+
+#languageButton {
+    background: transparent;
+    border: 1px solid rgba(212, 175, 55, 0.6);
+    color: #D4AF37;
+    padding: 9px 13px;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#languageButton:hover {
+    background: #D4AF37;
+    color: #111;
+}
+
+#languageButton i {
+    margin-left: 5px;
+    font-size: 9px;
+}
+
+.language-menu {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+
+    min-width: 140px;
+    padding: 6px;
+
+    background: #111;
+    border: 1px solid rgba(212, 175, 55, 0.5);
+
+    display: none;
+    z-index: 10000;
+}
+
+.language-selector:hover .language-menu {
+    display: block;
+}
+
+.language-menu button {
+    width: 100%;
+    padding: 10px 12px;
+
+    background: transparent;
+    border: none;
+
+    color: #ddd;
+    text-align: left;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+.language-menu button:hover {
+    background: rgba(212, 175, 55, 0.12);
+    color: #D4AF37;
+}
+
+/* =========================================
+   LANGUAGE SELECTOR
+========================================= */
+
+.language-selector {
+    position: relative;
+    margin-left: 5px;
+}
+
+#languageButton {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    padding: 8px 10px;
+
+    background: transparent;
+    border: 1px solid rgba(212, 175, 55, 0.45);
+
+    color: #D4AF37;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#languageButton:hover {
+    border-color: #D4AF37;
+}
+
+#languageButton .fa-chevron-down {
+    font-size: 8px;
+}
+
+
+/* DROPDOWN */
+
+.language-menu {
+    position: absolute;
+
+    top: calc(100% + 8px);
+    right: 0;
+
+    width: 135px;
+
+    padding: 6px;
+
+    background: #111;
+
+    border: 1px solid rgba(212, 175, 55, 0.4);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+
+    display: none;
+
+    z-index: 99999;
+}
+
+.language-menu.active {
+    display: block;
+}
+
+.language-menu button {
+    width: 100%;
+
+    padding: 10px 12px;
+
+    background: transparent;
+    border: none;
+
+    color: #ddd;
+
+    text-align: left;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;
+
+    cursor: pointer;
+}
+
+.language-menu button:hover {
+    background: rgba(212, 175, 55, 0.1);
+    color: #D4AF37;
+}
