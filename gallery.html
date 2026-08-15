@@ -25,6 +25,25 @@
 
 <body>
 
+     <!-- FLOATING GOLD PARTICLES -->
+
+<div class="gold-particles" aria-hidden="true">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+
+
     <!--================ NAVBAR ================-->
 
     <header>
@@ -40,7 +59,7 @@
         <nav>
 
             <a href="index.html">Home</a>
-            <a href="#about">About</a>
+            <a href="about.html">About</a>
             <a href="products.html">Products</a>
             <a href="gallery.html">Gallery</a>
 
@@ -64,6 +83,10 @@
 </div>
 
         </nav>
+
+        <button class="menu-toggle" id="menuToggle">
+    <i class="fas fa-bars"></i>
+</button>
 
         <a href="contact.html" class="btn-contact">
         Contact Us
@@ -639,6 +662,101 @@ function googleTranslateElementInit() {
 <div id="google_translate_element" style="display: none;"></div>
 
 <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script>
+/* =====================================================
+   SCROLL REVEAL
+===================================================== */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const revealElements = document.querySelectorAll(
+        "section > *, .product-card, .about-card, .vision-box, .mission-box, .gallery-video, .video-card"
+    );
+
+    revealElements.forEach(function (element) {
+        element.classList.add("reveal");
+    });
+
+
+    function revealOnScroll() {
+
+        const windowHeight = window.innerHeight;
+
+        revealElements.forEach(function (element) {
+
+            const elementTop =
+                element.getBoundingClientRect().top;
+
+            if (elementTop < windowHeight - 80) {
+
+                element.classList.add("active");
+
+            }
+
+        });
+
+    }
+
+
+    window.addEventListener(
+        "scroll",
+        revealOnScroll,
+        { passive: true }
+    );
+
+
+    revealOnScroll();
+
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const menuToggle = document.getElementById("menuToggle");
+    const nav = document.querySelector("nav");
+
+    if (!menuToggle || !nav) return;
+
+    menuToggle.addEventListener("click", function () {
+
+        nav.classList.toggle("active");
+
+        const icon = menuToggle.querySelector("i");
+
+        if (nav.classList.contains("active")) {
+
+            icon.classList.remove("fa-bars");
+            icon.classList.add("fa-xmark");
+
+        } else {
+
+            icon.classList.remove("fa-xmark");
+            icon.classList.add("fa-bars");
+
+        }
+
+    });
+
+
+    // Tutup menu setelah memilih halaman
+
+    nav.querySelectorAll("a").forEach(function (link) {
+
+        link.addEventListener("click", function () {
+            nav.classList.remove("active");
+
+            const icon = menuToggle.querySelector("i");
+
+            icon.classList.remove("fa-xmark");
+            icon.classList.add("fa-bars");
+        });
+
+    });
+
+});
+</script>
 
 </body>
 </html>

@@ -6706,3 +6706,584 @@ body {
     background: rgba(212, 175, 55, 0.1);
     color: #D4AF37;
 }
+
+/* =========================================
+   FLOATING GOLD PARTICLES
+========================================= */
+
+.gold-particles {
+    position: fixed;
+    inset: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    overflow: hidden;
+
+    pointer-events: none;
+
+    z-index: 0;
+}
+
+
+/* PARTICLE */
+
+.gold-particles span {
+    position: absolute;
+
+    display: block;
+
+    width: 4px;
+    height: 4px;
+
+    border-radius: 50%;
+
+    background: #D4AF37;
+
+    box-shadow:
+        0 0 8px rgba(212, 175, 55, 0.7),
+        0 0 18px rgba(212, 175, 55, 0.25);
+
+    opacity: 0;
+
+    animation: goldFloat linear infinite;
+}
+
+
+/* DIFFERENT POSITIONS */
+
+.gold-particles span:nth-child(1) {
+    left: 8%;
+    animation-duration: 14s;
+    animation-delay: 1s;
+}
+
+.gold-particles span:nth-child(2) {
+    left: 18%;
+    width: 3px;
+    height: 3px;
+    animation-duration: 18s;
+    animation-delay: 4s;
+}
+
+.gold-particles span:nth-child(3) {
+    left: 30%;
+    width: 5px;
+    height: 5px;
+    animation-duration: 16s;
+    animation-delay: 2s;
+}
+
+.gold-particles span:nth-child(4) {
+    left: 42%;
+    animation-duration: 20s;
+    animation-delay: 7s;
+}
+
+.gold-particles span:nth-child(5) {
+    left: 55%;
+    width: 3px;
+    height: 3px;
+    animation-duration: 15s;
+    animation-delay: 3s;
+}
+
+.gold-particles span:nth-child(6) {
+    left: 67%;
+    width: 5px;
+    height: 5px;
+    animation-duration: 19s;
+    animation-delay: 6s;
+}
+
+.gold-particles span:nth-child(7) {
+    left: 76%;
+    animation-duration: 17s;
+    animation-delay: 1s;
+}
+
+.gold-particles span:nth-child(8) {
+    left: 87%;
+    width: 3px;
+    height: 3px;
+    animation-duration: 21s;
+    animation-delay: 5s;
+}
+
+.gold-particles span:nth-child(9) {
+    left: 94%;
+    width: 5px;
+    height: 5px;
+    animation-duration: 16s;
+    animation-delay: 8s;
+}
+
+.gold-particles span:nth-child(10) {
+    left: 24%;
+    width: 2px;
+    height: 2px;
+    animation-duration: 22s;
+    animation-delay: 10s;
+}
+
+.gold-particles span:nth-child(11) {
+    left: 63%;
+    width: 2px;
+    height: 2px;
+    animation-duration: 18s;
+    animation-delay: 9s;
+}
+
+.gold-particles span:nth-child(12) {
+    left: 81%;
+    width: 4px;
+    height: 4px;
+    animation-duration: 23s;
+    animation-delay: 12s;
+}
+
+
+/* FLOATING ANIMATION */
+
+@keyframes goldFloat {
+
+    0% {
+        transform:
+            translateY(105vh)
+            translateX(0)
+            scale(0.5);
+
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.45;
+    }
+
+    50% {
+        transform:
+            translateY(50vh)
+            translateX(25px)
+            scale(1);
+
+        opacity: 0.7;
+    }
+
+    90% {
+        opacity: 0.3;
+    }
+
+    100% {
+        transform:
+            translateY(-10vh)
+            translateX(-20px)
+            scale(0.6);
+
+        opacity: 0;
+    }
+
+}
+
+
+/* =========================================
+   FLOATING LIGHT
+========================================= */
+
+.gold-particles::before,
+.gold-particles::after {
+    content: "";
+
+    position: absolute;
+
+    width: 260px;
+    height: 260px;
+
+    border-radius: 50%;
+
+    background: rgba(212, 175, 55, 0.035);
+
+    filter: blur(80px);
+
+    animation: lightFloat 12s ease-in-out infinite alternate;
+}
+
+.gold-particles::before {
+    top: 15%;
+    left: -100px;
+}
+
+.gold-particles::after {
+    right: -100px;
+    bottom: 10%;
+
+    animation-delay: 4s;
+}
+
+
+@keyframes lightFloat {
+
+    from {
+        transform: translate(0, 0);
+    }
+
+    to {
+        transform: translate(80px, 50px);
+    }
+
+}
+
+/* =====================================================
+   PREMIUM WEBSITE ANIMATIONS
+===================================================== */
+
+
+/* =====================================================
+   1. SCROLL REVEAL
+===================================================== */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(35px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* =====================================================
+   2. PRODUCT CARD HOVER
+===================================================== */
+
+.product-card {
+    transition:
+        transform 0.4s ease,
+        border-color 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+
+    border-color: rgba(212, 175, 55, 0.8);
+
+    box-shadow:
+        0 15px 45px rgba(212, 175, 55, 0.08);
+}
+
+.product-card img {
+    transition:
+        transform 0.5s ease,
+        filter 0.5s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+
+/* =====================================================
+   3. GALLERY / VIDEO HOVER
+===================================================== */
+
+.gallery-video,
+.video-card,
+.gallery-item {
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease,
+        border-color 0.4s ease;
+}
+
+.gallery-video:hover,
+.video-card:hover,
+.gallery-item:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 15px 45px rgba(212, 175, 55, 0.10);
+}
+
+
+/* Video */
+
+.gallery-video video,
+.video-card video {
+    transition:
+        transform 0.5s ease,
+        filter 0.5s ease;
+}
+
+.gallery-video:hover video,
+.video-card:hover video {
+    transform: scale(1.02);
+}
+
+
+/* =====================================================
+   4. GOLD SHIMMER BUTTON
+===================================================== */
+
+.btn-contact,
+.product-btn,
+.welcome-button {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Shimmer */
+
+.btn-contact::before,
+.product-btn::before,
+.welcome-button::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 70%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 255, 255, 0.35),
+            transparent
+        );
+
+    transform: skewX(-20deg);
+
+    transition: left 0.7s ease;
+
+    pointer-events: none;
+}
+
+
+.btn-contact:hover::before,
+.product-btn:hover::before,
+.welcome-button:hover::before {
+    left: 140%;
+}
+
+
+/* =====================================================
+   5. SECTION TITLE REVEAL
+===================================================== */
+
+.gallery-heading,
+.about-section-heading,
+.products-heading {
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+
+/* =====================================================
+   6. IMAGE CINEMATIC HOVER
+===================================================== */
+
+.about-story-image,
+.about-commitment-image {
+    overflow: hidden;
+}
+
+.about-story-image img,
+.about-commitment-image img {
+    transition:
+        transform 0.7s ease,
+        filter 0.7s ease;
+}
+
+.about-story-image:hover img,
+.about-commitment-image:hover img {
+    transform: scale(1.04);
+    filter: brightness(1.08);
+}
+
+
+/* =====================================================
+   7. GALLERY IMAGE
+===================================================== */
+
+.gallery-track img {
+    transition:
+        transform 0.5s ease,
+        filter 0.5s ease;
+}
+
+.gallery-track img:hover {
+    transform: scale(1.03);
+    filter: brightness(1.08);
+}
+
+
+/* =====================================================
+   8. VISION / MISSION
+===================================================== */
+
+.vision-box,
+.mission-box {
+    transition:
+        transform 0.4s ease,
+        border-color 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.vision-box:hover,
+.mission-box:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(212, 175, 55, 0.8);
+
+    box-shadow:
+        0 15px 40px rgba(212, 175, 55, 0.06);
+}
+
+
+/* =====================================================
+   9. SMOOTH SCROLL
+===================================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* =====================================================
+   10. REDUCE MOTION
+   Accessibility
+===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+}
+
+/* =========================================
+   MOBILE MENU
+========================================= */
+
+.menu-toggle {
+    display: none;
+
+    background: transparent;
+    border: none;
+
+    color: #D4AF37;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    padding: 5px;
+}
+
+
+/* MOBILE */
+
+@media screen and (max-width: 600px) {
+
+    header {
+        padding: 15px 20px;
+
+        position: relative;
+    }
+
+    .logo img {
+        width: 42px;
+        height: 42px;
+    }
+
+    .logo-text h2 {
+        font-size: 15px;
+    }
+
+    .logo-text span {
+        font-size: 7px;
+    }
+
+
+    /* HAMBURGER */
+
+    .menu-toggle {
+        display: block;
+
+        margin-left: auto;
+        margin-right: 5px;
+    }
+
+
+    /* MOBILE NAV */
+
+    nav {
+        position: absolute;
+
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+
+        display: none;
+
+        flex-direction: column;
+
+        padding: 15px 20px;
+
+        background: #111;
+
+        border-top: 1px solid rgba(212, 175, 55, 0.25);
+        border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+
+        z-index: 9999;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        width: 100%;
+
+        padding: 12px 5px;
+
+        text-align: center;
+    }
+
+
+    /* CONTACT BUTTON */
+
+    .btn-contact {
+        display: none;
+    }
+
+
+    /* LANGUAGE */
+
+    .language-selector {
+        margin: 8px auto 0;
+    }
+
+    .language-menu {
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+}
