@@ -567,7 +567,71 @@ document.addEventListener("DOMContentLoaded", () => {
         "ID321100000360830622"
 },
 
+"fruit-ring": {
+    name: "Fruit Ring",
+    category: "SWEET SNACK",
+    image: "images/products/fruit.jpg",
 
+    description:
+        "A colorful and crunchy cereal snack with a sweet fruit-inspired flavor, offering a light and enjoyable taste for every occasion.",
+
+    composition:
+        "Cereal-based ingredients, sugar, milk powder, fruit flavoring, and other food-grade ingredients.",
+
+    weight:
+        "Available in 550 g · 900 g ",
+
+    shelfLife:
+        "Approximately 6 months from the production date when stored properly.",
+
+    origin:
+        "Indonesia",
+
+    packaging:
+        "Available in practical retail packaging designed to help maintain the product's quality, crunchiness, and freshness.",
+
+    type:
+        "Sweet Cereal Snack",
+
+    pirt:
+        "2053204012827-29",
+
+    halal:
+        "ID321100000360830622"
+},
+
+"rice-ball": {
+    name: "Rice Ball",
+    category: "INDONESIAN SNACK",
+    image: "images/products/riceball.jpg",
+
+    description:
+        "A savory Indonesian snack made from rice-based ingredients, offering a soft and flavorful texture with a satisfying taste for everyday snacking.",
+
+    composition:
+        "Rice, selected seasonings, spices, salt, and other food-grade ingredients.",
+
+    weight:
+        "Available in 550 g · 900 g ",
+
+    shelfLife:
+        "Approximately 6 months from the production date when stored properly.",
+
+    origin:
+        "Indonesia",
+
+    packaging:
+        "Available in practical retail packaging designed to help maintain the product's quality, taste, and freshness.",
+
+    type:
+        "Rice-Based Snack",
+
+    pirt:
+        "2053204012827-29",
+
+    halal:
+        "ID321100000360830622"
+},
 
     };
     
