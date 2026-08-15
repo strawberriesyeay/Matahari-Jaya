@@ -1037,11 +1037,17 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
 
     const menuToggle = document.getElementById("menuToggle");
-    const nav = document.querySelector("nav");
+    const nav = document.querySelector("header nav");
 
-    if (!menuToggle || !nav) return;
+    if (!menuToggle || !nav) {
+        return;
+    }
 
-    menuToggle.addEventListener("click", function () {
+
+    menuToggle.addEventListener("click", function (e) {
+
+        e.preventDefault();
+        e.stopPropagation();
 
         nav.classList.toggle("active");
 
@@ -1062,17 +1068,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    // Tutup menu setelah memilih halaman
+    /* Tutup menu kalau klik link */
 
     nav.querySelectorAll("a").forEach(function (link) {
 
         link.addEventListener("click", function () {
+
             nav.classList.remove("active");
 
             const icon = menuToggle.querySelector("i");
 
             icon.classList.remove("fa-xmark");
             icon.classList.add("fa-bars");
+
         });
 
     });

@@ -7287,3 +7287,115 @@ html {
     }
 
 }
+
+/* =========================================
+   MOBILE NAVBAR - FINAL FIX
+========================================= */
+
+@media screen and (max-width: 600px) {
+
+    header {
+        position: relative;
+        z-index: 10000;
+    }
+
+
+    /* HAMBURGER */
+
+    .menu-toggle {
+        display: flex !important;
+
+        align-items: center;
+        justify-content: center;
+
+        width: 42px;
+        height: 42px;
+
+        margin-left: auto;
+
+        background: transparent;
+
+        border: none;
+
+        color: #D4AF37;
+
+        font-size: 25px;
+
+        cursor: pointer;
+
+        position: relative;
+
+        z-index: 10002;
+    }
+
+
+    /* NAV CLOSED */
+
+    header nav {
+        display: none !important;
+
+        position: absolute;
+
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+
+        box-sizing: border-box;
+
+        padding: 15px 20px 20px;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 0;
+
+        background: #0b0b0b;
+
+        border-top: 1px solid rgba(212, 175, 55, 0.2);
+        border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+
+        box-shadow:
+            0 15px 30px rgba(0, 0, 0, 0.5);
+
+        z-index: 10001;
+    }
+
+
+    /* NAV OPEN */
+
+    header nav.active {
+        display: flex !important;
+    }
+
+
+    header nav a {
+        display: block;
+
+        width: 100%;
+
+        padding: 13px 10px;
+
+        text-align: center;
+
+        color: #fff;
+
+        text-decoration: none;
+
+        font-size: 12px;
+    }
+
+
+    header nav a:hover {
+        color: #D4AF37;
+    }
+
+
+    /* CONTACT US DESKTOP BUTTON */
+
+    header > .btn-contact {
+        display: none;
+    }
+
+}
