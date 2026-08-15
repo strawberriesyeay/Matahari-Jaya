@@ -193,11 +193,20 @@
 /* ================= VIEW DETAILS BUTTON ================= */
 
 .product-bottom a[href*="product-detail"] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
     color: #D4AF37 !important;
     text-decoration: none !important;
+
     font-size: 12px;
+    font-weight: 500;
+
     white-space: nowrap;
-    transition: 0.3s ease;
+
+    transition: all 0.3s ease;
 }
 
 .product-bottom a[href*="product-detail"]:visited {
@@ -207,6 +216,30 @@
 .product-bottom a[href*="product-detail"]:hover {
     color: #F2D46B !important;
     text-decoration: none !important;
+
     transform: translateX(3px);
 }
 
+
+/* ================= VIEW DETAILS - MOBILE ================= */
+
+@media (max-width: 600px) {
+
+    .product-bottom a[href*="product-detail"] {
+        font-size: 10px;
+
+        padding: 8px 12px;
+
+        border: 1px solid rgba(212, 175, 55, 0.55);
+        border-radius: 4px;
+
+        min-width: 95px;
+
+        white-space: nowrap;
+    }
+
+    .product-bottom a[href*="product-detail"]:hover {
+        transform: none;
+    }
+
+}
