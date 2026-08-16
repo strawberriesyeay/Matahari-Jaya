@@ -7399,3 +7399,286 @@ html {
     }
 
 }
+
+/* =====================================================
+   GALLERY - MOBILE FINAL FIX
+===================================================== */
+
+@media screen and (max-width: 600px) {
+
+    /* ---------- GENERAL ---------- */
+
+    .gallery-page {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .gallery-page .company-gallery {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 65px 18px 70px;
+    }
+
+
+    /* ---------- HERO ---------- */
+
+    .gallery-page .gallery-hero {
+        width: 100%;
+        min-height: 55vh;
+        box-sizing: border-box;
+
+        padding: 110px 22px 60px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+    }
+
+    .gallery-page .gallery-hero-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .gallery-page .gallery-hero h1 {
+        font-size: 42px;
+        line-height: 1.05;
+    }
+
+    .gallery-page .gallery-hero p {
+        max-width: 330px;
+        margin: 15px auto 0;
+
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+
+    /* ---------- GALLERY HEADING ---------- */
+
+    .gallery-page .gallery-heading {
+        width: 100%;
+        box-sizing: border-box;
+
+        margin-bottom: 30px;
+
+        text-align: center;
+    }
+
+    .gallery-page .gallery-heading h2 {
+        font-size: 34px;
+        line-height: 1.1;
+    }
+
+    .gallery-page .gallery-heading p {
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+
+    /* ---------- PHOTO GRID ---------- */
+
+    .gallery-page .gallery-grid {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0;
+
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        grid-template-rows: repeat(5, 230px);
+
+        gap: 12px;
+
+        box-sizing: border-box;
+    }
+
+    .gallery-page .gallery-main,
+    .gallery-page .gallery-item:nth-child(2),
+    .gallery-page .gallery-item:nth-child(3),
+    .gallery-page .gallery-item:nth-child(4),
+    .gallery-page .gallery-item:nth-child(5) {
+
+        grid-column: 1;
+        grid-row: auto;
+
+        width: 100%;
+        min-width: 0;
+    }
+
+
+    /* ---------- PHOTO OVERLAY ---------- */
+
+    .gallery-page .gallery-overlay {
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        padding: 18px;
+    }
+
+    .gallery-page .gallery-overlay span {
+        font-size: 8px;
+        letter-spacing: 2px;
+    }
+
+    .gallery-page .gallery-overlay h3 {
+        font-size: 23px;
+        line-height: 1.1;
+    }
+
+    .gallery-page .gallery-overlay p {
+        font-size: 10px;
+        line-height: 1.5;
+    }
+
+
+    /* ---------- ACTIVITY SECTION ---------- */
+
+    .gallery-page .activity-video-section {
+        width: 100%;
+        max-width: 100%;
+
+        margin-top: 65px;
+
+        padding: 55px 0 25px;
+
+        box-sizing: border-box;
+
+        overflow: hidden;
+    }
+
+    .gallery-page .activity-video-heading {
+        width: 100%;
+
+        padding: 0 20px;
+
+        box-sizing: border-box;
+    }
+
+    .gallery-page .activity-video-heading h2 {
+        font-size: 32px;
+        line-height: 1.15;
+    }
+
+    .gallery-page .activity-video-heading p {
+        font-size: 11px;
+        line-height: 1.7;
+    }
+
+
+    /* ---------- VIDEO SLIDER ---------- */
+
+    .gallery-page .activity-video-slider {
+        position: relative;
+
+        width: 100%;
+        max-width: 100%;
+
+        padding: 0 42px;
+
+        box-sizing: border-box;
+
+        overflow: hidden;
+    }
+
+    .gallery-page .activity-video-track {
+        width: 100%;
+
+        display: flex;
+
+        overflow: hidden;
+
+        box-sizing: border-box;
+    }
+
+    .gallery-page .activity-video-slide {
+        flex: 0 0 100%;
+
+        width: 100%;
+        min-width: 0;
+
+        display: flex;
+        justify-content: center;
+
+        box-sizing: border-box;
+    }
+
+    .gallery-page .activity-video-slide video {
+        display: block;
+
+        width: 100%;
+        max-width: 100%;
+
+        height: auto;
+        max-height: 70vh;
+
+        object-fit: contain;
+
+        border-radius: 10px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* ---------- VIDEO ARROWS ---------- */
+
+    .gallery-page .activity-arrow {
+        position: absolute;
+
+        top: 50%;
+
+        width: 32px;
+        height: 32px;
+
+        transform: translateY(-50%);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 0;
+
+        z-index: 5;
+    }
+
+    .gallery-page .activity-prev {
+        left: 6px;
+    }
+
+    .gallery-page .activity-next {
+        right: 6px;
+    }
+
+
+    /* ---------- VIDEO DOTS ---------- */
+
+    .gallery-page .activity-video-dots {
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        gap: 8px;
+
+        margin-top: 18px;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    .gallery-page footer {
+        width: 100%;
+        box-sizing: border-box;
+
+        padding-left: 20px;
+        padding-right: 20px;
+
+        text-align: center;
+    }
+
+}
