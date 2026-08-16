@@ -7682,3 +7682,92 @@ html {
     }
 
 }
+
+/* =========================================
+   GALLERY MOBILE - SPACING FIX
+========================================= */
+
+@media screen and (max-width: 600px) {
+
+    /* Jarak antar foto */
+    .gallery-page .gallery-grid {
+        display: grid !important;
+
+        grid-template-columns: 1fr !important;
+
+        gap: 22px !important;
+
+        margin-left: 5% !important;
+        margin-right: 5% !important;
+
+        width: 90% !important;
+    }
+
+
+    /* Ukuran setiap foto */
+    .gallery-page .gallery-item,
+    .gallery-page .gallery-main {
+        width: 100% !important;
+
+        height: 250px !important;
+
+        min-height: 250px !important;
+
+        max-height: 250px !important;
+
+        overflow: hidden !important;
+
+        border-radius: 14px !important;
+    }
+
+
+    /* Foto */
+    .gallery-page .gallery-item img,
+    .gallery-page .gallery-main img {
+        width: 100% !important;
+
+        height: 100% !important;
+
+        object-fit: cover !important;
+
+        display: block;
+    }
+
+
+    /* Overlay */
+    .gallery-page .gallery-overlay {
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+
+        padding: 18px !important;
+
+        box-sizing: border-box;
+    }
+
+
+    .gallery-page .gallery-overlay h3 {
+        font-size: 21px !important;
+
+        line-height: 1.15 !important;
+
+        margin: 5px 0 !important;
+    }
+
+
+    .gallery-page .gallery-overlay p {
+        font-size: 10px !important;
+
+        line-height: 1.5 !important;
+
+        margin: 0 !important;
+    }
+
+
+    .gallery-page .gallery-overlay span {
+        font-size: 8px !important;
+
+        letter-spacing: 2px !important;
+    }
+
+}
