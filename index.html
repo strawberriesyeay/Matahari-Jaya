@@ -58,7 +58,7 @@
         <nav>
 
             <a href="index.html">Home</a>
-            <a href="about.html">About</a>
+            <a href="about.html">Company Profile</a>
             <a href="products.html">Products</a>
             <a href="gallery.html">Gallery</a>
 
@@ -78,11 +78,11 @@
         <button type="button" data-lang="id">
             🇮🇩 Indonesia
         </button>
+        </div>
     </div>
-</div>
 
 
-        </nav>
+    </nav>
 
         <button class="menu-toggle" id="menuToggle">
     <i class="fas fa-bars"></i>
@@ -93,10 +93,6 @@
         </a>
 
     </header>
-
-    
-
-
 
 <!--================ HERO ================-->
 
@@ -113,6 +109,9 @@
     >
         <source src="images/videos/cinematic.mp4" type="video/mp4">
     </video>
+    <button class="hero-sound-btn" id="heroSoundBtn" type="button">
+        <i class="fas fa-volume-xmark"></i>
+    </button>
 
     <!-- DARK OVERLAY -->
     <div class="hero-video-overlay"></div>
@@ -135,32 +134,20 @@
         </div>
 
         <p class="hero-video-tagline">
-    Indonesian Snacks, Ready for the World.
-</p>
-
-        <p class="translation-id hero-translation">
-            Jajanan Indonesia, Siap Mendunia.
+        Indonesian Snacks, Ready for the World.
         </p>
 
         <p class="hero-video-description">
             Quality Indonesian snacks prepared with care,
             from production to distribution.
         </p>
-
-        <p class="translation-id">
-            Jajanan Indonesia berkualitas yang dipersiapkan
-            dengan penuh perhatian, dari produksi hingga distribusi.
-        </p>
         <div class="hero-video-buttons">
-
             <a href="products.html" class="btn-gold">
                 Explore Products
             </a>
-
-            <a href="about.html" class="btn-outline">
-                Discover Our Story
+            <a href="contact.html#business-inquiry" class="btn-outline">
+                Partner With Us
             </a>
-
         </div>
 
     </div>
@@ -182,7 +169,7 @@
         <div class="about-image-frame">
 
             <img 
-                src="images/etalase.png" 
+                src="images/etalasee.jpeg" 
                 alt="Matahari Jaya"
             >
 
@@ -202,10 +189,6 @@
     <span>Growing Beyond Borders</span>
 </h2>
 
-<p class="translation-id heading-translation">
-    Dari Indonesia, Tumbuh Melampaui Batas
-</p>
-
 <p class="english-text" style="color: #ffffff !important;">
     Matahari Jaya is a growing Indonesian snack manufacturer
     dedicated to developing authentic snack products with
@@ -216,16 +199,19 @@
     Matahari Jaya adalah produsen camilan Indonesia berkembang yang berdedikasi menghadirkan produk autentik berkualitas tinggi, konsisten, dan terus berinovasi.
 </p>
 
-<p class="english-text" style="color: #ffffff !important;">
-    Starting from Indonesia, we are building a strong
-    foundation to introduce our products to a wider market
-    while creating opportunities for future partnerships.
+<p style="color: #ffffff !important;">
+    Starting from Indonesia, we are expanding our reach to
+    wider markets and welcome partnerships with distributors,
+    retailers, wholesalers, and businesses looking for
+    authentic Indonesian snack products.
 </p>
 
 <p class="translation-id">
-    Berakar dari Indonesia, kami membangun fondasi kuat untuk menjangkau pasar lebih luas sekaligus membuka peluang kerja sama di masa depan.
+    Berawal dari Indonesia, kami memperluas jangkauan ke pasar
+    yang lebih luas dan membuka peluang kerja sama dengan
+    distributor, retailer, grosir, serta pelaku bisnis yang
+    mencari produk camilan Indonesia autentik.
 </p>
-
         <!-- FEATURES -->
 
         <div class="about-features">
@@ -236,13 +222,10 @@
 
                 <div>
                     <h4>Quality Focus</h4>
-                    <p class="english-text" style="color: #ffffff !important;">
+
+                    <p>
                         Committed to consistent product quality.
                     </p>
-
-<p class="translation-id">
-    Berkomitmen menjaga kualitas produk yang konsisten.
-</p>
                 </div>
 
             </div>
@@ -319,8 +302,7 @@
         </h2>
 
         <p>
-            Explore our selection of premium Indonesian snacks,
-            carefully crafted for local and international customers.
+            Explore our selection of Indonesian snack products, available for wholesale, distribution, and business partnerships.
         </p>
 
     </div>
@@ -391,11 +373,14 @@
             Kaffir Lime Flavor
         </h3>
 
-        <p>
+        <p class="english-text" style="color: #ffffff !important;">
             A crispy Indonesian snack made from carefully
             selected ingredients, seasoned with spicy
             kaffir lime leaf flavor for a savory and
             aromatic taste.
+        </p>
+        <p class="translation-id">
+        Camilan renyah khas Indonesia dari bahan pilihan, memadukan rasa pedas dan aroma daun jeruk yang gurih alami.
         </p>
 
 
@@ -411,7 +396,7 @@
 
             </a>
 
-
+        
             <a href="product-detail.html?product=basreng"
                 class="product-detail">
 
@@ -488,8 +473,11 @@
             Endog Lewo · Spicy Kaffir Lime
         </h3>
 
-        <p>
+        <p class="english-text" style="color: #ffffff !important;">
             Crispy Indonesian Endog Lewo seasoned with spicy kaffir lime, delivering a bold, savory, and aromatic flavor in every bite.
+        </p>
+        <p class="translation-id">
+        Endog Lewo renyah khas Indonesia berbalut bumbu pedas daun jeruk yang gurih, mantap, dan aromatik di setiap gigitan.
         </p>
 
 
@@ -584,11 +572,14 @@
             Sale Pisang Cokelat
         </h3>
 
-        <p>
+        <p class="english-text" style="color: #ffffff !important;">
             Thin and crispy banana chips coated
         with rich chocolate flavor, delivering
         a perfect combination of sweetness
         and satisfying crunch in every bite.
+        </p>
+        <p class="translation-id">
+        Keripik pisang tipis renyah berbalut cokelat tebal, menyajikan perpaduan sempurna rasa manis dan kerenyahan pas di setiap gigitan.
         </p>
 
 
@@ -1107,6 +1098,194 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
     });
+
+});
+</script>
+
+<script>
+/* =====================================================
+   PRODUCT IMAGE SLIDER
+===================================================== */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const galleries = document.querySelectorAll(".product-gallery");
+
+    galleries.forEach(function (gallery) {
+
+        const track = gallery.querySelector(".gallery-track");
+        const images = gallery.querySelectorAll(".gallery-track img");
+
+        const prevButton = gallery.querySelector(".gallery-prev");
+        const nextButton = gallery.querySelector(".gallery-next");
+
+        const dots = gallery.querySelectorAll(".gallery-dots span");
+
+        if (!track || images.length === 0) return;
+
+        let currentIndex = 0;
+
+
+        function showImage(index) {
+
+            if (index < 0) {
+                index = images.length - 1;
+            }
+
+            if (index >= images.length) {
+                index = 0;
+            }
+
+            currentIndex = index;
+
+            track.style.transform =
+                `translateX(-${currentIndex * 100}%)`;
+
+
+            dots.forEach(function (dot, dotIndex) {
+
+                dot.classList.toggle(
+                    "active",
+                    dotIndex === currentIndex
+                );
+
+            });
+
+        }
+
+
+        /* NEXT */
+
+        if (nextButton) {
+
+            nextButton.addEventListener("click", function (e) {
+
+                e.preventDefault();
+                e.stopPropagation();
+
+                showImage(currentIndex + 1);
+
+            });
+
+        }
+
+
+        /* PREVIOUS */
+
+        if (prevButton) {
+
+            prevButton.addEventListener("click", function (e) {
+
+                e.preventDefault();
+                e.stopPropagation();
+
+                showImage(currentIndex - 1);
+
+            });
+
+        }
+
+
+        /* DOTS */
+
+        dots.forEach(function (dot, index) {
+
+            dot.addEventListener("click", function (e) {
+
+                e.preventDefault();
+                e.stopPropagation();
+
+                showImage(index);
+
+            });
+
+        });
+
+
+        /* INITIAL */
+
+        showImage(0);
+
+    });
+
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const video = document.querySelector(".hero-video-bg");
+    const soundButton = document.getElementById("heroSoundBtn");
+
+    if (!video || !soundButton) return;
+
+    const icon = soundButton.querySelector("i");
+
+    let soundEnabled = false;
+
+
+    /* =========================
+       SOUND BUTTON
+    ========================= */
+
+    soundButton.addEventListener("click", function () {
+
+        if (video.muted) {
+
+            video.muted = false;
+            soundEnabled = true;
+
+            icon.classList.remove("fa-volume-xmark");
+            icon.classList.add("fa-volume-high");
+
+        } else {
+
+            video.muted = true;
+            soundEnabled = false;
+
+            icon.classList.remove("fa-volume-high");
+            icon.classList.add("fa-volume-xmark");
+
+        }
+
+    });
+
+
+    /* =========================
+       AUTO MUTE WHEN SCROLLING
+    ========================= */
+
+    const observer = new IntersectionObserver(
+        function (entries) {
+
+            entries.forEach(function (entry) {
+
+                if (entry.isIntersecting) {
+
+                    video.play();
+
+                    if (soundEnabled) {
+                        video.muted = false;
+                    }
+
+                } else {
+
+                    video.muted = true;
+
+                    icon.classList.remove("fa-volume-high");
+                    icon.classList.add("fa-volume-xmark");
+
+                }
+
+            });
+
+        },
+        {
+            threshold: 0.3
+        }
+    );
+
+
+    observer.observe(video);
 
 });
 </script>
