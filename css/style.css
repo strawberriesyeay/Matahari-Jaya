@@ -9730,3 +9730,783 @@ footer .copyright {
     }
 
 }
+
+/* =========================================================
+   EXPLORE / B2B PAGE
+   ========================================================= */
+
+.explore-page {
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(212, 175, 55, 0.08),
+            transparent 40%
+        ),
+        #0b0b0b;
+
+    color: #fff;
+}
+
+
+/* ================= HERO ================= */
+
+.explore-hero {
+    min-height: 75vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 150px 8% 100px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.explore-hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    right: -150px;
+    top: 50px;
+
+    border-radius: 50%;
+
+    background: rgba(212, 175, 55, 0.07);
+
+    filter: blur(80px);
+}
+
+
+.explore-hero-content {
+    max-width: 760px;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+.explore-hero-content .section-label {
+    color: #D4AF37;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    letter-spacing: 4px;
+}
+
+
+.explore-hero h1 {
+    margin: 18px 0 20px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(60px, 8vw, 100px);
+
+    line-height: 0.9;
+
+    font-weight: 600;
+}
+
+
+.explore-hero h1 span {
+    color: #D4AF37;
+}
+
+
+.explore-hero p {
+    max-width: 600px;
+
+    color: #999;
+
+    font-size: 14px;
+    line-height: 1.9;
+
+    margin-bottom: 35px;
+}
+
+
+.explore-btn {
+    display: inline-flex;
+
+    align-items: center;
+    gap: 12px;
+
+    padding: 14px 25px;
+
+    background: #D4AF37;
+    color: #111;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+
+.explore-btn:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 30px rgba(212, 175, 55, 0.2);
+}
+
+
+/* ================= SECTIONS ================= */
+
+.explore-section {
+    width: min(1150px, 90%);
+
+    margin: auto;
+
+    padding: 100px 0;
+}
+
+
+.explore-heading {
+    max-width: 650px;
+
+    margin-bottom: 50px;
+}
+
+
+.explore-heading > span {
+    color: #D4AF37;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    letter-spacing: 3px;
+}
+
+
+.explore-heading h2 {
+    margin: 12px 0 15px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 52px;
+
+    font-weight: 600;
+}
+
+
+.explore-heading p {
+    color: #888;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+    margin: 0;
+}
+
+
+/* ================= BENEFITS ================= */
+
+.business-benefits {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 16px;
+}
+
+
+.benefit-card {
+    padding: 30px 24px;
+
+    background: rgba(255, 255, 255, 0.025);
+
+    border: 1px solid rgba(255, 255, 255, 0.07);
+
+    border-radius: 10px;
+
+    transition: 0.3s ease;
+}
+
+
+.benefit-card:hover {
+    border-color: rgba(212, 175, 55, 0.4);
+
+    transform: translateY(-5px);
+}
+
+
+.benefit-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 25px;
+
+    border: 1px solid rgba(212, 175, 55, 0.35);
+
+    border-radius: 50%;
+
+    color: #D4AF37;
+}
+
+
+.benefit-card h3 {
+    margin: 0 0 10px;
+
+    font-size: 16px;
+}
+
+
+.benefit-card p {
+    margin: 0;
+
+    color: #888;
+
+    font-size: 11px;
+
+    line-height: 1.7;
+}
+
+
+/* ================= BUSINESS INFO ================= */
+
+.explore-business-info {
+    padding-top: 60px;
+}
+
+
+.business-info-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+
+.business-info-card {
+    padding: 35px;
+
+    min-height: 260px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,0.045),
+            rgba(255,255,255,0.015)
+        );
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    border-radius: 12px;
+
+    position: relative;
+
+    transition: 0.3s ease;
+}
+
+
+.business-info-card:hover {
+    border-color: rgba(212,175,55,0.4);
+}
+
+
+.business-info-icon {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 28px;
+
+    color: #111;
+
+    background: #D4AF37;
+
+    border-radius: 50%;
+}
+
+
+.business-info-card > span {
+    display: block;
+
+    color: #D4AF37;
+
+    font-size: 9px;
+    font-weight: 600;
+
+    letter-spacing: 2.5px;
+}
+
+
+.business-info-card h3 {
+    margin: 8px 0 12px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 30px;
+}
+
+
+.business-info-card p {
+    max-width: 430px;
+
+    margin: 0 0 20px;
+
+    color: #999;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+}
+
+
+.business-info-card strong {
+    color: #D4AF37;
+
+    font-size: 10px;
+
+    font-weight: 500;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* ================= PACKAGING ================= */
+
+.packaging-section {
+    border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+
+.packaging-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+
+.packaging-card {
+    padding: 35px;
+
+    min-height: 220px;
+
+    background: #111;
+
+    border: 1px solid rgba(255,255,255,0.07);
+
+    border-radius: 10px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.packaging-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 100px;
+    height: 100px;
+
+    right: -40px;
+    top: -40px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(212,175,55,0.15);
+}
+
+
+.packaging-number {
+    margin-bottom: 45px;
+
+    color: #D4AF37;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 24px;
+}
+
+
+.packaging-card h3 {
+    margin: 0 0 10px;
+
+    font-size: 17px;
+}
+
+
+.packaging-card p {
+    margin: 0;
+
+    color: #888;
+
+    font-size: 11px;
+
+    line-height: 1.7;
+}
+
+
+/* ================= ORDER PROCESS ================= */
+
+.order-section {
+    border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+
+.order-process {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 18px;
+}
+
+
+.order-step {
+    flex: 1;
+}
+
+
+.order-step > span {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 45px;
+    height: 45px;
+
+    margin-bottom: 22px;
+
+    color: #D4AF37;
+
+    border: 1px solid rgba(212,175,55,0.4);
+
+    border-radius: 50%;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 18px;
+}
+
+
+.order-step h3 {
+    margin: 0 0 10px;
+
+    font-size: 15px;
+}
+
+
+.order-step p {
+    margin: 0;
+
+    color: #888;
+
+    font-size: 11px;
+
+    line-height: 1.7;
+}
+
+
+.order-line {
+    width: 50px;
+
+    height: 1px;
+
+    margin-top: 22px;
+
+    background: rgba(212,175,55,0.3);
+}
+
+
+/* ================= PARTNERS ================= */
+
+.partner-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 16px;
+}
+
+
+.partner-card {
+    padding: 30px 20px;
+
+    text-align: center;
+
+    background: rgba(255,255,255,0.025);
+
+    border: 1px solid rgba(255,255,255,0.07);
+
+    border-radius: 10px;
+}
+
+
+.partner-card i {
+    margin-bottom: 20px;
+
+    color: #D4AF37;
+
+    font-size: 24px;
+}
+
+
+.partner-card h3 {
+    margin: 0 0 8px;
+
+    font-size: 15px;
+}
+
+
+.partner-card p {
+    margin: 0;
+
+    color: #888;
+
+    font-size: 10px;
+
+    line-height: 1.6;
+}
+
+
+/* ================= FAQ ================= */
+
+.explore-faq {
+    border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+
+.faq-list {
+    max-width: 850px;
+}
+
+
+.faq-list details {
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+
+.faq-list summary {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 22px 0;
+
+    cursor: pointer;
+
+    list-style: none;
+
+    color: #ddd;
+
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+.faq-list summary::-webkit-details-marker {
+    display: none;
+}
+
+
+.faq-list summary i {
+    color: #D4AF37;
+
+    font-size: 10px;
+
+    transition: 0.3s ease;
+}
+
+
+.faq-list details[open] summary i {
+    transform: rotate(45deg);
+}
+
+
+.faq-list details p {
+    max-width: 700px;
+
+    padding: 0 0 22px;
+
+    margin: 0;
+
+    color: #888;
+
+    font-size: 11px;
+
+    line-height: 1.8;
+}
+
+
+/* ================= CTA ================= */
+
+.explore-cta {
+    width: 100%;
+
+    padding: 100px 8%;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(212,175,55,0.12),
+            transparent 55%
+        );
+}
+
+
+.explore-cta > div {
+    max-width: 700px;
+
+    margin: auto;
+}
+
+
+.explore-cta span {
+    color: #D4AF37;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    letter-spacing: 3px;
+}
+
+
+.explore-cta h2 {
+    margin: 15px 0;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 50px;
+}
+
+
+.explore-cta p {
+    margin: 0 auto 30px;
+
+    max-width: 560px;
+
+    color: #888;
+
+    font-size: 12px;
+
+    line-height: 1.8;
+}
+
+
+.explore-cta-btn {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 14px 25px;
+
+    background: #D4AF37;
+
+    color: #111;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+
+.explore-cta-btn:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 30px rgba(212,175,55,0.2);
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 900px) {
+
+    .business-benefits {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .partner-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .order-process {
+        flex-direction: column;
+    }
+
+    .order-line {
+        width: 1px;
+        height: 35px;
+
+        margin: 0 0 0 22px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .explore-hero {
+        min-height: 70vh;
+
+        padding: 130px 7% 80px;
+    }
+
+    .explore-hero h1 {
+        font-size: 60px;
+    }
+
+    .explore-section {
+        width: 86%;
+
+        padding: 70px 0;
+    }
+
+    .explore-heading h2 {
+        font-size: 40px;
+    }
+
+    .business-benefits,
+    .business-info-grid,
+    .packaging-grid,
+    .partner-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .explore-cta {
+        padding: 80px 7%;
+    }
+
+    .explore-cta h2 {
+        font-size: 40px;
+    }
+
+}

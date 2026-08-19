@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "basreng": {
     name: "Basreng",
     category: "INDONESIAN SNACK",
-    image: "images/products/basreng-1.jpeg",
+    image: "images/products/basreng-3.jpeg",
 
     description:
         "A crispy Indonesian snack made from seasoned fish meatball, offering a savory, aromatic, and satisfying taste with a crunchy texture.",
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "endog-lewo": {
     name: "Spicy Endog Lewo ",
     category: "INDONESIAN SNACK",
-    image: "images/products/",
+    image: "images/products/endoglewo-1.jpeg",
 
     description:
         "A traditional Indonesian savory snack with a crunchy texture and distinctive seasoning, inspired by the culinary tradition of Garut, West Java.",
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "sale-pisang": {
     name: "Sale Pisang",
     category: "INDONESIAN SNACK",
-    image: "images/products/salee.jpg",
+    image: "images/products/salelidah.jpeg",
 
     description:
         "A traditional Indonesian banana snack with a naturally sweet and distinctive flavor.",
@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
 "keripik-tempe": {
     name: "Keripik Tempe",
     category: "INDONESIAN SNACK",
-    image: "images/products/keripiktempe.jpeg",
+    image: "images/products/keripiktempe-1.jpeg",
 
     description:
         "Crispy tempe chips made from selected tempe and carefully chosen seasonings, delivering a savory, crunchy, and authentic Indonesian snack experience.",
@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", () => {
 "usus-pedas": {
     name: "Usus Pedas",
     category: "SPICY SNACK",
-    image: "images/products/ususpedas.jpeg",
+    image: "images/products/ususpedas-1.jpeg",
 
     description:
         "A crispy Indonesian snack made from carefully selected chicken intestines, seasoned with a spicy and savory blend of spices for a bold and satisfying taste.",
@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", () => {
 "endog-lewo-original": {
     name: "Endog Lewo Original",
     category: "INDONESIAN SNACK",
-    image: "images/products/endoglewoori.jpeg",
+    image: "images/products/endoglewoori-1.jpeg",
 
     description:
         "A traditional Indonesian snack with a crispy texture and savory original flavor, made from carefully selected ingredients and prepared to deliver a satisfying taste in every bite.",
@@ -207,7 +207,7 @@ document.addEventListener("DOMContentLoaded", () => {
 "basreng-original": {
     name: "Basreng Original",
     category: "INDONESIAN SNACK",
-    image: "images/products/basrengori.jpeg",
+    image: "images/products/basrengori-1.jpeg",
 
     description:
         "A crispy Indonesian snack made from seasoned fish meatball, offering a savory, aromatic, and satisfying taste with a crunchy texture.",
@@ -240,7 +240,7 @@ document.addEventListener("DOMContentLoaded", () => {
 "coco-crunch-fruit": {
     name: "Coco Crunch Fruit",
     category: "SWEET SNACK",
-    image: "images/products/cocobuah.jpeg",
+    image: "images/products/cocobuah-1.jpeg",
 
     description:
         "A crispy and flavorful Indonesian snack made from selected ingredients, combined with a sweet and crunchy fruit-inspired flavor for a satisfying taste.",
@@ -273,7 +273,7 @@ document.addEventListener("DOMContentLoaded", () => {
 "coco-crunch-chocolate": {
     name: "Coco Crunch Chocolate",
     category: "SWEET SNACK",
-    image: "images/products/cocochocolate.jpeg",
+    image: "images/products/cocochocolate-1.jpeg",
 
     description:
         "A crispy and flavorful Indonesian snack made from selected ingredients, combined with a sweet and crunchy fruit-inspired flavor for a satisfying taste.",
@@ -306,7 +306,7 @@ document.addEventListener("DOMContentLoaded", () => {
 "cassava-chips": {
     name: "Cassava Chips",
     category: "INDONESIAN SNACK",
-    image: "images/products/cassavachips.jpeg",
+    image: "images/products/cassava-1.jpeg",
 
     description:
         "Crispy cassava chips made from carefully selected cassava, offering a light, crunchy texture and savory Indonesian snack experience.",
@@ -339,7 +339,7 @@ document.addEventListener("DOMContentLoaded", () => {
 "momo-stik": {
     name: "Momo Stik",
     category: "INDONESIAN SNACK",
-    image: "images/products/momostikk.jpg",
+    image: "images/products/momostik-1.jpeg",
 
     description:
         "Crispy and tasty Momo Stik available in three delicious variants: Pandan, Chocolate, and Durian. Made to deliver a crunchy and enjoyable snack experience for every occasion.",
@@ -372,7 +372,7 @@ document.addEventListener("DOMContentLoaded", () => {
 "breakfast": {
     name: "Complete Indonesian Breakfast Package",
     category: "BREAKFAST PACKAGE",
-    image: "images/products/breakfast.jpeg",
+    image: "images/products/breakfast-1.jpeg",
 
     description:
         "A convenient Indonesian breakfast package combining savory rice balls, Coco Crunch cereal, and full cream milk. Designed as a practical and satisfying breakfast option with a combination of savory and sweet flavors.",
@@ -405,7 +405,7 @@ document.addEventListener("DOMContentLoaded", () => {
 "coco-ring": {
     name: "Coco Crunch · Fruit Ring",
     category: "SWEET SNACK",
-    image: "images/products/2.jpg",
+    image: "images/products/chocolate-1.jpeg",
 
     description:
         "A crunchy and sweet cereal snack available in three delicious variants: Coco Chocolate, Coco Fruit, and Fruit Frank, made with selected ingredients and Dancow milk.",
@@ -438,7 +438,7 @@ document.addEventListener("DOMContentLoaded", () => {
 "snack-cup": {
     name: "Snack Cup",
     category: "BUSINESS PACKAGE",
-    image: "images/products/snackcup.jpeg",
+    image: "images/products/paketusaha.jpeg",
 
     description:
         "A practical and attractive snack package designed for business, resale, and everyday snacking. Each box contains 30 individual snack cups with a variety of tasty snack selections.",
@@ -471,7 +471,7 @@ document.addEventListener("DOMContentLoaded", () => {
 "banana-fingers": {
     name: "Banana Fingers",
     category: "INDONESIAN SNACK",
-    image: "images/products/salejari.jpg",
+    image: "images/products/salejari-1.jpg",
 
     description:
         "A crispy traditional Indonesian banana snack made from selected bananas, offering a naturally sweet flavor and satisfying crunchy texture.",
@@ -504,7 +504,7 @@ document.addEventListener("DOMContentLoaded", () => {
 "crispy-chicken-skin": {
     name: "Crispy Chicken Skin",
     category: "INDONESIAN SNACK",
-    image: "images/products/kulitayam.jpg",
+    image: "images/products/kulitayam-1.jpeg",
 
     description:
         "A crispy and savory Indonesian snack made from selected chicken skin, seasoned with carefully selected spices for a delicious and satisfying crunch.",
@@ -537,7 +537,7 @@ document.addEventListener("DOMContentLoaded", () => {
 "snack-cup-pack": {
     name: "Snack Cup",
     category: "SNACK PACKAGE",
-    image: "images/products/pack.jpeg",
+    image: "images/products/snackcupp.jpeg",
 
     description:
         "A practical assorted snack package featuring a variety of Indonesian snacks in individual portions, suitable for everyday snacking, retail, and business purposes.",
@@ -570,7 +570,7 @@ document.addEventListener("DOMContentLoaded", () => {
 "fruit-ring": {
     name: "Fruit Ring",
     category: "SWEET SNACK",
-    image: "images/products/fruit.jpg",
+    image: "images/products/fruit-1.jpg",
 
     description:
         "A colorful and crunchy cereal snack with a sweet fruit-inspired flavor, offering a light and enjoyable taste for every occasion.",
@@ -603,7 +603,7 @@ document.addEventListener("DOMContentLoaded", () => {
 "rice-ball": {
     name: "Rice Ball",
     category: "INDONESIAN SNACK",
-    image: "images/products/riceball.jpg",
+    image: "images/products/riceball-3.jpg",
 
     description:
         "A savory Indonesian snack made from rice-based ingredients, offering a soft and flavorful texture with a satisfying taste for everyday snacking.",
@@ -636,7 +636,7 @@ document.addEventListener("DOMContentLoaded", () => {
 "usus-ori": {
     name: "Original Crispy Chicken Intestines",
     category: "CRISPY SNACK",
-    image: "images/products/",
+    image: "images/products/ususori.jpeg",
 
     description:
         "A crispy Indonesian snack made from carefully selected chicken intestines, seasoned with a savory blend of spices to create a light, crunchy, and satisfying original flavor.",
