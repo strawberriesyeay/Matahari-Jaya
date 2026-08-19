@@ -25,6 +25,7 @@
 
 
 <body>
+    <div class="explore-sparkles" id="exploreSparkles"></div>
 
 
 <!-- ================= NAVBAR ================= -->
@@ -224,7 +225,7 @@
     <!-- ================= BUSINESS INFO ================= -->
 
     <section
-        class="explore-section explore-business-info"
+        class="explore-section explore-business-info explore-reveal"
         id="business-info">
 
 
@@ -376,7 +377,7 @@
 
     <!-- ================= PACKAGING ================= -->
 
-    <section class="explore-section packaging-section">
+    <section class="explore-section packaging-section explore-reveal">
 
         <div class="explore-heading">
 
@@ -461,7 +462,7 @@
 
     <!-- ================= ORDER PROCESS ================= -->
 
-    <section class="explore-section order-section">
+    <section class="explore-section order-section explore-reveal">
 
         <div class="explore-heading">
 
@@ -572,7 +573,7 @@
 
     <!-- ================= WHO WE SERVE ================= -->
 
-    <section class="explore-section">
+    <section class="explore-section explore-reveal">
 
         <div class="explore-heading">
 
@@ -634,32 +635,32 @@
 
 
 
-    <!-- ================= FAQ ================= -->
+    <section class="explore-section explore-faq explore-reveal">
 
-    <section class="explore-section explore-faq">
+    <div class="explore-heading">
 
-        <div class="explore-heading">
+        <span>FAQ</span>
 
-            <span>
-                FAQ
-            </span>
+        <h2>Frequently Asked Questions</h2>
 
-            <h2>
-                Frequently Asked Questions
-            </h2>
-
-        </div>
+    </div>
 
 
-        <div class="faq-list">
+    <div class="faq-list">
 
+        <div class="faq-item">
 
-            <details>
+            <button class="faq-question" type="button">
 
-                <summary>
+                <span>
                     What is the minimum order quantity?
-                    <i class="fa-solid fa-plus"></i>
-                </summary>
+                </span>
+
+                <i class="fa-solid fa-plus"></i>
+
+            </button>
+
+            <div class="faq-answer">
 
                 <p>
                     MOQ depends on the product type,
@@ -668,15 +669,24 @@
                     quantities.
                 </p>
 
-            </details>
+            </div>
+
+        </div>
 
 
-            <details>
+        <div class="faq-item">
 
-                <summary>
+            <button class="faq-question" type="button">
+
+                <span>
                     What packaging options are available?
-                    <i class="fa-solid fa-plus"></i>
-                </summary>
+                </span>
+
+                <i class="fa-solid fa-plus"></i>
+
+            </button>
+
+            <div class="faq-answer">
 
                 <p>
                     Packaging options may include retail,
@@ -684,15 +694,24 @@
                     on the selected product.
                 </p>
 
-            </details>
+            </div>
+
+        </div>
 
 
-            <details>
+        <div class="faq-item">
 
-                <summary>
+            <button class="faq-question" type="button">
+
+                <span>
                     How many products are included in one carton?
-                    <i class="fa-solid fa-plus"></i>
-                </summary>
+                </span>
+
+                <i class="fa-solid fa-plus"></i>
+
+            </button>
+
+            <div class="faq-answer">
 
                 <p>
                     Carton capacity varies by product and
@@ -700,15 +719,24 @@
                     detailed carton information.
                 </p>
 
-            </details>
+            </div>
+
+        </div>
 
 
-            <details>
+        <div class="faq-item">
 
-                <summary>
+            <button class="faq-question" type="button">
+
+                <span>
                     Can I place recurring orders?
-                    <i class="fa-solid fa-plus"></i>
-                </summary>
+                </span>
+
+                <i class="fa-solid fa-plus"></i>
+
+            </button>
+
+            <div class="faq-answer">
 
                 <p>
                     Yes. Recurring supply arrangements can
@@ -716,15 +744,24 @@
                     requirements.
                 </p>
 
-            </details>
+            </div>
+
+        </div>
 
 
-            <details>
+        <div class="faq-item">
 
-                <summary>
+            <button class="faq-question" type="button">
+
+                <span>
                     How can I request a quotation?
-                    <i class="fa-solid fa-plus"></i>
-                </summary>
+                </span>
+
+                <i class="fa-solid fa-plus"></i>
+
+            </button>
+
+            <div class="faq-answer">
 
                 <p>
                     Contact our team through the Contact page
@@ -732,17 +769,19 @@
                     packaging, and business requirements.
                 </p>
 
-            </details>
+            </div>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
 
     <!-- ================= CTA ================= -->
 
-    <section class="explore-cta">
+    <section class="explore-cta explore-reveal">
 
         <div>
 
@@ -808,6 +847,121 @@
     </p>
 
 </footer>
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+
+    /* =====================================================
+       FAQ
+       ===================================================== */
+
+    const faqQuestions =
+        document.querySelectorAll(".faq-question");
+
+
+    faqQuestions.forEach(question => {
+
+        question.addEventListener("click", () => {
+
+            const faqItem =
+                question.closest(".faq-item");
+
+            faqItem.classList.toggle("active");
+
+        });
+
+    });
+
+
+
+    /* =====================================================
+       SCROLL REVEAL
+       ===================================================== */
+
+    const revealElements =
+        document.querySelectorAll(".explore-reveal");
+
+
+    const revealObserver =
+        new IntersectionObserver(
+            (entries) => {
+
+                entries.forEach(entry => {
+
+                    if (entry.isIntersecting) {
+
+                        entry.target.classList.add("show");
+
+                        revealObserver.unobserve(
+                            entry.target
+                        );
+
+                    }
+
+                });
+
+            },
+            {
+                threshold: 0.15
+            }
+        );
+
+
+    revealElements.forEach(element => {
+
+        revealObserver.observe(element);
+
+    });
+
+
+
+    /* =====================================================
+       GOLD SPARKLES
+       ===================================================== */
+
+    const sparkleContainer =
+        document.getElementById("exploreSparkles");
+
+
+    if (sparkleContainer) {
+
+        for (let i = 0; i < 35; i++) {
+
+            const sparkle =
+                document.createElement("span");
+
+
+            sparkle.classList.add("gold-sparkle");
+
+
+            sparkle.style.left =
+                Math.random() * 100 + "%";
+
+
+            sparkle.style.top =
+                Math.random() * 100 + "%";
+
+
+            sparkle.style.animationDelay =
+                Math.random() * 4 + "s";
+
+
+            sparkle.style.animationDuration =
+                (3 + Math.random() * 4) + "s";
+
+
+            sparkleContainer.appendChild(
+                sparkle
+            );
+
+        }
+
+    }
+
+});
+
+</script>
 
 
 </body>
