@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Fish meatball (fish, tapioca flour, seasoning), tapioca flour, garlic, salt, spices, flavoring, and cooking oil.",
 
     weight:
-        "Available in 250 g · 500 g",
+        "Available in 1 kg · 500 g",
 
     shelfLife:
         "6 Months",
@@ -39,9 +39,9 @@ document.addEventListener("DOMContentLoaded", () => {
 },
 
         "endog-lewo": {
-    name: "Endog Lewo",
+    name: "Spicy Endog Lewo ",
     category: "INDONESIAN SNACK",
-    image: "images/products/endoglewoo.jpeg",
+    image: "images/products/",
 
     description:
         "A traditional Indonesian savory snack with a crunchy texture and distinctive seasoning, inspired by the culinary tradition of Garut, West Java.",
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Tapioca flour, wheat flour, eggs, garlic, salt, seasoning, spices, and cooking oil.",
 
     weight:
-        "Available in 250 g · 500 g",
+        "Available in 500 g · 1 kg",
 
     shelfLife:
         "Approximately 6 months from the production date when stored properly.",
@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Tempe, tapioca flour, wheat flour, garlic, salt, selected spices, seasoning, and cooking oil.",
 
     weight:
-        "Available in 500 g",
+        "Available in 1 kg",
 
     shelfLife:
         "Approximately 6 months from the production date when stored properly.",
@@ -216,7 +216,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Fish meatball (fish, tapioca flour, seasoning), tapioca flour, garlic, salt, spices, flavoring, and cooking oil.",
 
     weight:
-        "Available in 250 g · 500 g",
+        "Available in 1 kg · 500 g",
 
     shelfLife:
         "6 Months",
@@ -249,7 +249,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Coco crunch, selected cereal ingredients, fruit flavoring, sugar, milk ingredients, and other food-grade ingredients.",
 
     weight:
-        "Available in 500 g · 900 g",
+        "Available in 150 g · 500 g · 900 g",
 
     shelfLife:
         "6 Months",
@@ -282,7 +282,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Coco crunch, selected cereal ingredients, fruit flavoring, sugar, milk ingredients, and other food-grade ingredients.",
 
     weight:
-        "Available in 500 g · 900 g",
+        "Available in 150 g · 500 g · 900 g",
 
     shelfLife:
         "6 Months",
@@ -348,7 +348,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Starch-based snack ingredients, selected seasonings, cooking oil, and flavoring ingredients according to the selected variant.",
 
     weight:
-        "Available in 500 g · 1 kg",
+        "Available in 600 g",
 
     shelfLife:
         "Approximately 12 months from the production date when stored properly.",
@@ -480,7 +480,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Selected bananas, flour, sugar, and cooking oil.",
 
     weight:
-        "Available in 500 g.",
+        "Available in 250 g · 500 g ",
 
     shelfLife:
         "Approximately 6 months from the production date when stored properly.",
@@ -513,7 +513,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Chicken skin, tapioca flour, garlic, salt, chili, selected spices, seasoning, and cooking oil.",
 
     weight:
-        "Available in 500 g.",
+        "Available in 250 g · 500 g.",
 
     shelfLife:
         "Approximately 6 months from the production date when stored properly.",
@@ -579,7 +579,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Cereal-based ingredients, sugar, milk powder, fruit flavoring, and other food-grade ingredients.",
 
     weight:
-        "Available in 550 g · 900 g ",
+        "Available in 100 g · 500 g ",
 
     shelfLife:
         "Approximately 6 months from the production date when stored properly.",
@@ -612,7 +612,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Rice, selected seasonings, spices, salt, and other food-grade ingredients.",
 
     weight:
-        "Available in 550 g · 900 g ",
+        "Available in 100 g · 500 g ",
 
     shelfLife:
         "Approximately 6 months from the production date when stored properly.",
@@ -632,6 +632,40 @@ document.addEventListener("DOMContentLoaded", () => {
     halal:
         "ID321100000360830622"
 },
+
+"usus-ori": {
+    name: "Original Crispy Chicken Intestines",
+    category: "CRISPY SNACK",
+    image: "images/products/",
+
+    description:
+        "A crispy Indonesian snack made from carefully selected chicken intestines, seasoned with a savory blend of spices to create a light, crunchy, and satisfying original flavor.",
+
+    composition:
+        "Chicken intestines, tapioca flour, garlic, salt, selected spices, seasoning, and cooking oil.",
+
+    weight:
+        "Available in 500 g",
+
+    shelfLife:
+        "Approximately 6 months from the production date when stored properly.",
+
+    origin:
+        "Indonesia",
+
+    packaging:
+        "Available in retail packaging with sealed packaging designed to maintain the product's quality and freshness.",
+
+    type:
+        "Spicy Crispy Snack",
+
+    pirt:
+        "2053204012827-29",
+
+    halal:
+        "ID321100000360830622"
+},
+
 
     };
     
